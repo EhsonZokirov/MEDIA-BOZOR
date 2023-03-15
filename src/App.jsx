@@ -2,6 +2,11 @@ import { Button } from "@mui/material";
 import React from "react";
 import logo from "./img/logo.png";
 import CampaignIcon from "@mui/icons-material/Campaign";
+import WorkHistoryIcon from "@mui/icons-material/WorkHistory";
+import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
+import ThumbUpIcon from "@mui/icons-material/ThumbUp";
+import SpatialAudioOffIcon from "@mui/icons-material/SpatialAudioOff";
+import MicIcon from "@mui/icons-material/Mic";
 function App() {
   return (
     <div className="">
@@ -47,18 +52,67 @@ function App() {
         </div>
       </section>
       {/*  */}
-      <section>
-        <h1 className="text-center font-bold text-4xl my-10">
+      <section className="my-10">
+        <h1 className="text-center font-bold text-4xl ">
           Работая с нами, вы получаете:
         </h1>
-        <div className="grid grid-cols-3 text-center w-[70%] m-auto gap-60">
+        <div className="grid grid-cols-3 text-center w-[70%] m-auto gap-20">
           <div>
             <div>
-              <CampaignIcon />
+              <CampaignIcon color="error" sx={{ fontSize: "100px" }} />
             </div>
-            <p>
-              Возможность привлечь в рекламную кампанию{" "}
-              <span className="font-bold">любого блогера Таджнета</span>
+            <p className="text-lg">
+              Надежного
+              <span className="font-bold"> партнера, которому доверяют</span>
+              крупные компании и известные бренды
+            </p>
+          </div>
+          <div>
+            <div>
+              <WorkHistoryIcon color="error" sx={{ fontSize: "100px" }} />
+            </div>
+            <p className="text-lg">
+              Тот результат,
+              <span className="font-bold"> который вы хотите от рекламы</span>,
+              за те деньги, которые готовы отдать
+            </p>
+          </div>
+          <div>
+            <div>
+              <VolunteerActivismIcon color="error" sx={{ fontSize: "100px" }} />
+            </div>
+            <p className="text-lg">
+              Cамый
+              <span className="font-bold"> эффективный способ размещения</span>у
+              блогеров
+            </p>
+          </div>
+          <div>
+            <div>
+              <ThumbUpIcon color="error" sx={{ fontSize: "100px" }} />
+            </div>
+            <p className="text-lg">
+              Охват любой аудитории с
+              <span className="font-bold"> максимально высокой конверсией</span>
+            </p>
+          </div>
+          <div>
+            <div>
+              <SpatialAudioOffIcon color="error" sx={{ fontSize: "100px" }} />
+            </div>
+            <p className="text-lg">
+              Возможность
+              <span className="font-bold"> создать индивидуальное шоу</span>
+              под ваш продукт
+            </p>
+          </div>
+          <div>
+            <div>
+              <MicIcon color="error" sx={{ fontSize: "100px" }} />
+            </div>
+            <p className="text-lg">
+              Возможность привлечь в рекламную кампанию
+              <span className="font-bold"> любого блогера Таджнета</span>
             </p>
           </div>
         </div>
