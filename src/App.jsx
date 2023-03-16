@@ -14,6 +14,7 @@ import Jonon from "./img/JONON.PNG";
 import azizRahima from "./img/AZIZ & Rahima.PNG";
 import zarka from "./img/ZARKA.PNG";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 import LibraryMusicIcon from "@mui/icons-material/LibraryMusic";
 function App() {
   return (
@@ -35,7 +36,11 @@ function App() {
       {/*  */}
       <section className="container  mx-auto md:py-[5.99%] bg-slate-100">
         <div className=" flex items-center justify-center">
-          <img className=" w-[15%]" src={logo} alt="logo" />
+          <img
+            className=" w-[15% active:scale-150 transition-all]"
+            src={logo}
+            alt="logo"
+          />
           <div className="font-bold text-[#CC0909] md:text-5xl sm:text-3xl xs:text-xs text-[15px]">
             MEDIA <br /> BOZOR
           </div>
@@ -128,79 +133,133 @@ function App() {
       {/*  */}
       <section className=" bg-slate-100 py-10">
         <h1 className="text-center font-bold text-4xl mb-10"> БЛОГЕРЫ </h1>
-        <div className="grid text-[#CC0909] xs:grid-cols-2 lg:grid-cols-3 m-auto text-center font-medium md:w-[80%] px-5 gap-5">
-          <div className="m-auto cursor-pointer border bg-white md:w-[50%] shadow-md hover:shadow-lg transition-all duration-300">
-            <h1>Ilhomjon</h1>
-            <img className=" m-auto" src={fozilov} alt="Fozilov IMG" />
-            <div className="p-2 flex  justify-between px-5">
+        <div className="grid xs:grid-cols-2 lg:grid-cols-3 m-auto text-center font-medium md:w-[80%] px-5 gap-5">
+          {/* FOZILOV */}
+          <div className="m-auto hover:text-[#CC0909] hover:scale-105 cursor-pointer border rounded-md bg-white md:w-[80%] shadow-md hover:shadow-xl transition-all duration-300 ">
+            <h1>ILhomjon</h1>
+            <img
+              className=" m-auto active:scale-150 transition-all  "
+              src={fozilov}
+              alt="IMG"
+            />
+            <div className="p-2 flex  justify-evenly">
               <div>
-                <InstagramIcon /> 250k
+                <InstagramIcon /> 216k
               </div>
               <div>
-                <LibraryMusicIcon /> 150k
+                <YouTubeIcon /> 9.57k
+              </div>
+              <div>
+                <LibraryMusicIcon /> 50k
               </div>
             </div>
           </div>
-          <div className="m-auto items-center cursor-pointer border bg-white md:w-[50%] shadow-md hover:shadow-lg transition-all duration-300">
+          {/* Nasiba */}
+          <div className="m-auto hover:text-[#CC0909] hover:scale-105 items-center cursor-pointer border rounded-md bg-white md:w-[80%] shadow-md hover:shadow-xl transition-all duration-300 ">
             <h1>Nasiba</h1>
-            <img className=" m-auto" src={nasiba} alt="Fozilov IMG" />
-            <div className="p-2 flex  justify-between px-5">
+            <img
+              className=" m-auto active:scale-150 transition-all "
+              src={nasiba}
+              alt="IMG"
+            />
+            <div className="p-2 flex  justify-evenly">
               <div>
-                <InstagramIcon /> 250k
+                <InstagramIcon /> 11k
               </div>
+
               <div>
-                <LibraryMusicIcon /> 150k
+                <LibraryMusicIcon /> 5k
               </div>
             </div>
           </div>
-          <div className="m-auto items-center cursor-pointer border bg-white md:w-[50%] shadow-md hover:shadow-lg transition-all duration-300">
+          {/* ZANJABIL */}
+          <div className="m-auto hover:text-[#CC0909] hover:scale-105 items-center cursor-pointer border rounded-md bg-white md:w-[80%] shadow-md hover:shadow-xl transition-all duration-300 ">
             <h1>ZanjabilBro</h1>
-            <img className=" m-auto" src={ZANJABIL} alt="Fozilov IMG" />
-            <div className="p-2 flex  justify-between px-5">
+            <img
+              className=" m-auto active:scale-150 transition-all "
+              src={ZANJABIL}
+              alt="IMG"
+            />
+            <div className="p-2 flex  justify-evenly">
               <div>
-                <InstagramIcon /> 250k
+                <InstagramIcon /> 262k
+              </div>
+              <div>
+                <YouTubeIcon /> 158k
               </div>
               <div>
                 <LibraryMusicIcon /> 150k
               </div>
             </div>
           </div>
-          <div className="m-auto items-center cursor-pointer border bg-white md:w-[50%] shadow-md hover:shadow-lg transition-all duration-300">
+          {/* JONON */}
+          <div className="m-auto hover:text-[#CC0909] hover:scale-105 items-center cursor-pointer border rounded-md bg-white md:w-[80%] shadow-md hover:shadow-xl transition-all duration-300 ">
             <h1>Jonon</h1>
-            <img className=" m-auto" src={Jonon} alt="Fozilov IMG" />
-            <div className="p-2 flex  justify-between px-5">
+            <img
+              className=" m-auto active:scale-150 transition-all"
+              src={Jonon}
+              alt="IMG"
+            />
+            <div className="p-2 flex  justify-evenly">
               <div>
-                <InstagramIcon /> 250k
+                <InstagramIcon /> 260k
               </div>
               <div>
-                <LibraryMusicIcon /> 150k
+                <YouTubeIcon /> 57k
+              </div>
+              <div>
+                <LibraryMusicIcon /> 70k
               </div>
             </div>
           </div>
-          <div className="m-auto items-center cursor-pointer border bg-white md:w-[50%] shadow-md hover:shadow-lg transition-all duration-300">
+          {/* AZIZ & RAHIMA */}
+          <div className="m-auto hover:text-[#CC0909] hover:scale-105 items-center cursor-pointer border rounded-md bg-white md:w-[80%] shadow-md hover:shadow-xl transition-all duration-300 ">
             <h1>Aziz & Rahima</h1>
-            <img className=" m-auto" src={azizRahima} alt="Fozilov IMG" />
-            <div className="p-2 flex  justify-between px-5">
+            <img
+              className=" m-auto active:scale-150 transition-all"
+              src={azizRahima}
+              alt="IMG"
+            />
+            <div className="p-2 flex  justify-evenly">
               <div>
-                <InstagramIcon /> 250k
+                <InstagramIcon /> 729k
               </div>
               <div>
-                <LibraryMusicIcon /> 150k
+                <YouTubeIcon /> 17k
+              </div>
+              <div>
+                <LibraryMusicIcon /> 450k
               </div>
             </div>
           </div>
-          <div className="m-auto items-center cursor-pointer border bg-white md:w-[50%] shadow-md hover:shadow-lg transition-all duration-300">
+          {/* ZARKA */}
+          <div className="m-auto hover:text-[#CC0909] hover:scale-105 items-center cursor-pointer border rounded-md bg-white md:w-[80%] shadow-md hover:shadow-xl transition-all duration-300 ">
             <h1>Zarka</h1>
-            <img className=" m-auto" src={zarka} alt="Fozilov IMG" />
-            <div className="p-2 flex justify-between px-5">
+            <img
+              className=" m-auto active:scale-150 transition-all"
+              src={zarka}
+              alt="IMG"
+            />
+            <div className="p-2 flex justify-evenly">
               <div>
-                <InstagramIcon /> 250k
+                <InstagramIcon /> 255k
               </div>
               <div>
                 <LibraryMusicIcon /> 150k
               </div>
             </div>
           </div>
+        </div>
+        {/* ALL BLOGGERS BUTTON */}
+        <div className="m-auto text-center mt-20">
+          <Button
+            variant="contained"
+            color="error"
+            size="large"
+            sx={{ width: "50%", fontFamily: "unset" }}
+          >
+            ВСЕ БЛОГЕРЫ
+          </Button>
         </div>
       </section>
     </div>
