@@ -52,11 +52,11 @@ function App() {
         </div>
       </section>
       {/*  */}
-      <section className="my-10">
-        <h1 className="text-center font-bold text-4xl ">
+      <section className="my-16">
+        <h1 className="text-center font-bold text-4xl my-20">
           Работая с нами, вы получаете:
         </h1>
-        <div className="grid grid-cols-3 text-center w-[70%] m-auto gap-20">
+        <div className="grid grid-cols-3 text-center w-[70%] m-auto gap-28 my-10">
           <div>
             <div>
               <CampaignIcon color="error" sx={{ fontSize: "100px" }} />
@@ -102,7 +102,7 @@ function App() {
             </div>
             <p className="text-lg">
               Возможность
-              <span className="font-bold"> создать индивидуальное шоу</span>
+              <span className="font-bold"> создать индивидуальное шоу </span>
               под ваш продукт
             </p>
           </div>
