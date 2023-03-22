@@ -7,8 +7,9 @@ import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import SpatialAudioOffIcon from "@mui/icons-material/SpatialAudioOff";
 import MicIcon from "@mui/icons-material/Mic";
-import fozilov from "./img/Fozilov.PNG";
-import nasiba from "./img/Nasiba.JPG";
+import fozilov from "./img/Fozilov.jpg";
+// import nasiba from "./img/Nasiba.JPG";
+import Dilnaze from "./img/Dilnaze.jpg";
 import ZANJABIL from "./img/ZANJABIL.JPG";
 import Jonon from "./img/JONON.PNG";
 import azizRahima from "./img/AZIZ & Rahima.PNG";
@@ -172,10 +173,10 @@ function App() {
             </div>
             {/* Nasiba */}
             <div className="m-auto hover:text-[#CC0909] hover:scale-105 items-center cursor-pointer border rounded-md bg-white md:w-[80%] shadow-md hover:shadow-xl transition-all duration-300 ">
-              <h1>Nasiba</h1>
+              <h1>Dilnaze</h1>
               <img
                 className=" m-auto md:active:scale-150 transition-all "
-                src={nasiba}
+                src={Dilnaze}
                 alt="IMG"
               />
               <div className="p-2 flex  justify-evenly">
@@ -293,57 +294,57 @@ function App() {
           <h1 className="text-center pb-10 font-bold text-3xl">
             НАШИ КЛИЕНТЫ:
           </h1>
-          <sect className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 w-[50%] lg:w-[75%] m-auto">
-            <div className="m-auto">
+          <sect className=" grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 w-[50%] lg:w-[75%] m-auto">
+            <div className="m-auto flex items-center">
               <img
                 className="m-auto hover:scale-110 transition-all"
                 src={humo}
                 alt="humo"
               />
             </div>
-            <div className="m-auto">
+            <div className="m-auto flex items-center">
               <img
                 className="m-auto hover:scale-110 transition-all"
                 src={kayhon}
                 alt="kayhon"
               />
             </div>
-            <div className="m-auto">
+            <div className="m-auto flex items-center">
               <img
                 className="m-auto hover:scale-110 transition-all"
                 src={alif}
                 alt="alif"
               />
             </div>
-            <div className="m-auto">
+            <div className="m-auto flex items-center">
               <img
                 className="m-auto hover:scale-110 transition-all"
                 src={kfc}
                 alt="kfc"
               />
             </div>
-            <div className="m-auto">
+            <div className="m-auto flex items-center">
               <img
                 className="m-auto hover:scale-110 transition-all"
                 src={siyoma}
                 alt="siyoma"
               />
             </div>
-            <div className="m-auto">
+            <div className="m-auto flex items-center">
               <img
                 className="m-auto hover:scale-110 transition-all"
                 src={megafon}
                 alt="megafon"
               />
             </div>
-            <div className="m-auto">
+            <div className="m-auto flex items-center">
               <img
-                className="m-auto hover:scale-110 transition-all"
+                className="m-auto hover:scale-110 w-[150px] transition-all"
                 src={tamosho}
                 alt="tamosho"
               />
             </div>
-            <div className="m-auto">
+            <div className="m-auto flex items-center">
               <img
                 className="m-auto hover:scale-110 transition-all"
                 src={humo}
