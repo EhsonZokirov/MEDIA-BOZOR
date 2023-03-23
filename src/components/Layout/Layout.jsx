@@ -35,7 +35,7 @@ function Layout() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <div className="flex justify-evenly transition-all text-white bg-[#000000]">
+      <div className="flex flex-wrap text-center justify-evenly transition-all text-white bg-[#073648] py-3">
         <NavLink to="Blogers">
           <ListItemText primary="Блогеры" />
         </NavLink>
@@ -56,14 +56,14 @@ function Layout() {
   return (
     <div>
       <header>
-        <nav className="flex fixed w-[100%] backdrop-blur-[5px] z-10 items-center bg-[#ffffff4a] sm:font-bold p-2 px-10 justify-between sm:justify-center list-none xs:gap-10 sm:gap-20 md:gap-40">
-          <div className="pr-20">
+        <nav className="flex flex-wrap fixed w-[100%] backdrop-blur-[5px] z-10 items-center sm:font-bold py-2 px-5 md:px-0 justify-between md:justify-evenly list-none bg-[#ffffff4a]">
+          <div className="">
             <NavLink to="Home">
               <img className="w-[50px] transition-all" src={logo} alt="logo" />
             </NavLink>
           </div>
           {/* Drawer */}
-          <div className="sm:hidden ">
+          <div className="md:hidden ">
             {["top"].map((anchor) => (
               <React.Fragment key={anchor}>
                 <Button onClick={toggleDrawer(anchor, true)}>
@@ -81,7 +81,7 @@ function Layout() {
           </div>
           {/* Drawer */}
           {/* bar */}
-          <div className="hidden text-lg sm:flex sm:gap-40">
+          <div className="hidden text-lg md:flex sm:gap-40 ">
             <NavLink
               className="hover:text-red-400 cursor-pointer transition"
               to="Blogers"
