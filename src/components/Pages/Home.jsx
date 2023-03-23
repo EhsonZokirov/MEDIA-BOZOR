@@ -283,7 +283,7 @@ function Home() {
           <h1 className="text-center pb-10 font-bold text-3xl">
             НАШИ КЛИЕНТЫ:
           </h1>
-          <sect className=" grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 w-[50%] lg:w-[75%] m-auto">
+          <section className=" grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 w-[50%] lg:w-[75%] m-auto">
             <div className="m-auto flex items-center">
               <img
                 className="m-auto hover:scale-110 transition-all"
@@ -340,7 +340,7 @@ function Home() {
                 alt="humo"
               />
             </div>
-          </sect>
+          </section>
         </section>
       </div>
     </div>
