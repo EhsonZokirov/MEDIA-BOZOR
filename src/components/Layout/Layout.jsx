@@ -40,7 +40,7 @@ function Layout() {
     >
       <List>
         {
-          <ListItem disablePadding>
+          <ListItem >
             <ListItemButton to="Blogers">
               <ListItemText primary="Блогеры" />
             </ListItemButton>
