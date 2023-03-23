@@ -1,0 +1,8 @@
+.active {
+    color: red;
+    cursor: default;
+}
+
+.active:hover {
+    color: red;
+}
