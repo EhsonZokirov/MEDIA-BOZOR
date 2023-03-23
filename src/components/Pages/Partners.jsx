@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Partners() {
-  return (
-    <div>Partners</div>
-  )
+  return <div className="pt-20">Partners</div>;
 }
 
-export default Partners
+export default Partners;

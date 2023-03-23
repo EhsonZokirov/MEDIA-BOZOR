@@ -27,7 +27,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div>
-      <div className=" bg-[#ffffff4a] md:w-[80%] m-auto">
+      <div className=" bg-[#ffffff4a] md:w-[80%] m-auto pt-10">
         <section className="py-[7%] lg:container m-auto">
           <div className=" flex items-center justify-center">
             <img className=" lg:w-[15%]" src={logo} alt="logo" />
@@ -59,7 +59,7 @@ function Home() {
           <h1 className="text-center font-bold text-2xl md:text-4xl my-20">
             Работая с нами, вы получаете:
           </h1>
-          <div className=" grid grid-cols-2 lg:grid-cols-3 text-center md:w-[70%] m-auto md:gap-28 my-10">
+          <div className=" grid grid-cols-2 lg:grid-cols-3 text-center gap-10 md:w-[70%] m-auto md:gap-28 my-10">
             <div className="">
               <div>
                 <CampaignIcon color="error" sx={{ fontSize: "100px" }} />

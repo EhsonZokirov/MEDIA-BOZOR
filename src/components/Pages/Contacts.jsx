@@ -4,12 +4,11 @@ import React from "react";
 function Contacts() {
   return (
     <div>
-      <h1 className="text-4xl font-bold text-center py-10">Контакты</h1>
-
+      <h1 className="text-4xl font-bold text-center py-[86px]">Контакты</h1>
       {/* section */}
-      <section className="py-[69px]">
-        <form className="grid m-auto px-10 md:w-[40%] md:py-10">
-          <h1 className=" font-bold text-lg">Напишите нам:</h1>
+      <section className="py-[100px]">
+        <form className="grid m-auto px-10 md:w-[40%]">
+          <h1 className=" font-bold text-lg ">Напишите нам:</h1>
           <TextField required variant="standard" label="Имя" />
           <TextField required variant="standard" label=" Телефон" type="tel" />
           <TextField required variant="standard" label=" Эл. Адрес" />

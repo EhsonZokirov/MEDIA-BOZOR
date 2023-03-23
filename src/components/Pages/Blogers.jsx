@@ -22,7 +22,7 @@ function Blogers() {
   return (
     <div>
       {/* blogger cards  */}
-      <section className=" py-10 lg:container m-auto">
+      <section className=" py-20 lg:container m-auto">
         <h1 className="text-center font-bold text-4xl mb-10"> БЛОГЕРЫ </h1>
         <div className="grid xs:grid-cols-2 lg:grid-cols-3 m-auto text-center font-medium md:w-[80%] px-5 gap-5">
           {/* FOZILOV */}

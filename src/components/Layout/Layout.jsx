@@ -6,38 +6,38 @@ function Layout() {
   return (
     <div>
       <header>
-        <nav className="flex bg-[#ffffff4a] sm:font-bold  p-5 justify-center list-none xs:gap-10 sm:gap-20 md:gap-40">
-          <NavLink to="Home">
-            <img className="w-[40px] transition-all" src={logo} alt="logo" />
-          </NavLink>
-
-          <NavLink
-            className="hover:text-slate-500 cursor-pointer transition"
-            to="Blogers"
-          >
-            Блогеры
-          </NavLink>
-
-          <NavLink
-            className="hover:text-slate-500 cursor-pointer transition"
-            to="Clients"
-          >
-            Клиенты
-          </NavLink>
-
-          <NavLink
-            className="hover:text-slate-500 cursor-pointer transition"
-            to="Partners"
-          >
-            Партнеры
-          </NavLink>
-
-          <NavLink
-            className="hover:text-slate-500 cursor-pointer transition"
-            to="Contacts"
-          >
-            Контакты
-          </NavLink>
+        <nav className="flex fixed w-[100%] backdrop-blur-[5px] z-10 items-center bg-[#ffffff4a] sm:font-bold p-2 justify-center list-none xs:gap-10 sm:gap-20 md:gap-40">
+          <div className="pr-20">
+            <NavLink to="Home">
+              <img className="w-[50px] transition-all" src={logo} alt="logo" />
+            </NavLink>
+          </div>
+          <div className="hidden text-lg sm:flex sm:gap-40">
+            <NavLink
+              className="hover:text-red-400 cursor-pointer transition"
+              to="Blogers"
+            >
+              Блогеры
+            </NavLink>
+            <NavLink
+              className="hover:text-red-400 cursor-pointer transition"
+              to="Clients"
+            >
+              Клиенты
+            </NavLink>
+            <NavLink
+              className="hover:text-red-400 cursor-pointer transition"
+              to="Partners"
+            >
+              Партнеры
+            </NavLink>
+            <NavLink
+              className="hover:text-red-400 cursor-pointer transition"
+              to="Contacts"
+            >
+              Контакты
+            </NavLink>
+          </div>
         </nav>
       </header>
       <Outlet />
