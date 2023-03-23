@@ -39,7 +39,7 @@ function Layout() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {
+        
           <ListItem >
             <ListItemButton to="Blogers">
               <ListItemText primary="Блогеры" />
@@ -54,7 +54,7 @@ function Layout() {
               <ListItemText primary="Контакты" />
             </ListItemButton>
           </ListItem>
-        }
+        
       </List>
       <Divider />
     </Box>
