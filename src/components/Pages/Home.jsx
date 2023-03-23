@@ -50,7 +50,7 @@ function Home() {
               sx={{ width: "50%" }}
               className="animate-pulse"
             >
-              ТОП
+              СОВЕТ
             </Button>
           </div>
         </section>
