@@ -39,22 +39,18 @@ function Layout() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        
-          <ListItem >
-            <ListItemButton to="Blogers">
-              <ListItemText primary="Блогеры" />
-            </ListItemButton>
-            <ListItemButton to="Clients">
-              <ListItemText primary="Клиенты" />
-            </ListItemButton>
-            <ListItemButton to="Partners">
-              <ListItemText primary="Партнёры" />
-            </ListItemButton>
-            <ListItemButton to="Contacts">
-              <ListItemText primary="Контакты" />
-            </ListItemButton>
-          </ListItem>
-        
+        <NavLink to="Blogers">
+          <ListItemText primary="Блогеры" />
+        </NavLink>
+        <NavLink to="Clients">
+          <ListItemText primary="Клиенты" />
+        </NavLink>
+        <NavLink to="Partners">
+          <ListItemText primary="Партнёры" />
+        </NavLink>
+        <NavLink to="Contacts">
+          <ListItemText primary="Контакты" />
+        </NavLink>
       </List>
       <Divider />
     </Box>
