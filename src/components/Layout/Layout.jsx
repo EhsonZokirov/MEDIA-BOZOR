@@ -7,7 +7,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
-import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import ListItemText from "@mui/material/ListItemText";
 function Layout() {
@@ -36,7 +35,7 @@ function Layout() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List>
+      <div className="flex justify-evenly transition-all text-white bg-[#000000]">
         <NavLink to="Blogers">
           <ListItemText primary="Блогеры" />
         </NavLink>
@@ -49,7 +48,7 @@ function Layout() {
         <NavLink to="Contacts">
           <ListItemText primary="Контакты" />
         </NavLink>
-      </List>
+      </div>
       <Divider />
     </Box>
   );
