@@ -42,16 +42,16 @@ function Layout() {
         {
           <ListItem disablePadding>
             <ListItemButton to="Blogers">
-              <ListItemText primary={"Блогеры"} />
+              <ListItemText primary="Блогеры" />
             </ListItemButton>
             <ListItemButton to="Clients">
-              <ListItemText primary={"Клиенты"} />
+              <ListItemText primary="Клиенты" />
             </ListItemButton>
             <ListItemButton to="Partners">
-              <ListItemText primary={"Партнёры"} />
+              <ListItemText primary="Партнёры" />
             </ListItemButton>
             <ListItemButton to="Contacts">
-              <ListItemText primary={"Контакты"} />
+              <ListItemText primary="Контакты" />
             </ListItemButton>
           </ListItem>
         }
