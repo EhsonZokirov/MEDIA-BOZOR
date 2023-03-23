@@ -27,7 +27,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div>
-      <div className=" bg-[#ffffff4a] w-[80%] m-auto">
+      <div className=" bg-[#ffffff4a] md:w-[80%] m-auto">
         <section className="py-[7%] lg:container m-auto">
           <div className=" flex items-center justify-center">
             <img className=" lg:w-[15%]" src={logo} alt="logo" />
@@ -59,22 +59,22 @@ function Home() {
           <h1 className="text-center font-bold text-2xl md:text-4xl my-20">
             Работая с нами, вы получаете:
           </h1>
-          <div className="slide-top grid sm:grid-cols-2 lg:grid-cols-3 text-center w-[70%] m-auto gap-28 my-10">
-            <div className="slide-top">
+          <div className=" grid grid-cols-2 lg:grid-cols-3 text-center md:w-[70%] m-auto md:gap-28 my-10">
+            <div className="">
               <div>
                 <CampaignIcon color="error" sx={{ fontSize: "100px" }} />
               </div>
-              <p className="text-md">
+              <p className="text-[15px] md:text-md">
                 Надежного
                 <span className="font-bold"> партнера, которому доверяют </span>
                 крупные компании и известные бренды
               </p>
             </div>
-            <div className="slide-top">
+            <div className="">
               <div>
                 <WorkHistoryIcon color="error" sx={{ fontSize: "100px" }} />
               </div>
-              <p className="text-md">
+              <p className="text-[15px] md:text-md">
                 Тот результат,
                 <span className="font-bold">
                   {" "}
@@ -83,14 +83,14 @@ function Home() {
                 , за те деньги, которые готовы отдать
               </p>
             </div>
-            <div className="slide-top">
+            <div className="">
               <div>
                 <VolunteerActivismIcon
                   color="error"
                   sx={{ fontSize: "100px" }}
                 />
               </div>
-              <p className="text-md">
+              <p className="text-[15px] md:text-md">
                 Cамый
                 <span className="font-bold">
                   {" "}
@@ -99,11 +99,11 @@ function Home() {
                 у блогеров
               </p>
             </div>
-            <div className="slide-top">
+            <div className="">
               <div>
                 <ThumbUpIcon color="error" sx={{ fontSize: "100px" }} />
               </div>
-              <p className="text-md">
+              <p className="text-[15px] md:text-md">
                 Охват любой аудитории с
                 <span className="font-bold">
                   максимально высокой конверсией
@@ -111,20 +111,20 @@ function Home() {
               </p>
             </div>
             <div>
-              <div className="slide-top">
+              <div className="">
                 <SpatialAudioOffIcon color="error" sx={{ fontSize: "100px" }} />
               </div>
-              <p className="text-md">
+              <p className="text-[15px] md:text-md">
                 Возможность
                 <span className="font-bold"> создать индивидуальное шоу </span>
                 под ваш продукт
               </p>
             </div>
-            <div className="slide-top">
+            <div className="">
               <div>
                 <MicIcon color="error" sx={{ fontSize: "100px" }} />
               </div>
-              <p className="text-md">
+              <p className="text-[15px] md:text-md">
                 Возможность привлечь в рекламную кампанию
                 <span className="font-bold"> любого блогера Таджнета</span>
               </p>
