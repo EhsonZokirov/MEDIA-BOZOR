@@ -8,12 +8,12 @@ function Contacts() {
 
       {/* section */}
       <section className="py-[69px]">
-        <form className="grid m-auto w-[40%] py-10">
+        <form className="grid m-auto px-10 md:w-[40%] md:py-10">
           <h1 className=" font-bold text-lg">Напишите нам:</h1>
-          <TextField variant="standard" label="Имя" />
-          <TextField variant="standard" label=" Телефон" type="tel" />
-          <TextField variant="standard" label=" Эл. Адрес" type="email" />
-          <TextField variant="filled" label="Сообщение" multiline />
+          <TextField required variant="standard" label="Имя" />
+          <TextField required variant="standard" label=" Телефон" type="tel" />
+          <TextField required variant="standard" label=" Эл. Адрес" />
+          <TextField required variant="filled" label="Сообщение" multiline />
           <Button type="submit"> Отправить</Button>
         </form>
       </section>
