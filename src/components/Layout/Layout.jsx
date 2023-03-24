@@ -7,7 +7,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
-import Divider from "@mui/material/Divider";
 import ListItemText from "@mui/material/ListItemText";
 function Layout() {
   const [state, setState] = useState({
