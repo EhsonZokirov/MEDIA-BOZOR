@@ -15,6 +15,7 @@ function Contacts() {
           <TextField required variant="filled" label="Сообщение" multiline />
 
           <Button
+            to="NoMatch"
             fullWidth
             type="submit"
             variant="contained"
