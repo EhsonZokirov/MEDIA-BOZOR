@@ -1,5 +1,6 @@
 import { Button, TextField } from "@mui/material";
 import React from "react";
+import { NavLink } from "react-router-dom";
 // import logo from "../img/logo.png";
 function Contacts() {
   return (
@@ -14,15 +15,16 @@ function Contacts() {
           <TextField required variant="standard" label=" Эл. Адрес" />
           <TextField required variant="filled" label="Сообщение" multiline />
 
-          <Button
-            to="NoMatch"
-            fullWidth
-            type="submit"
-            variant="contained"
-            sx={{ bgcolor: "purple" }}
-          >
-            Отправить
-          </Button>
+          <NavLink to="NoMatch">
+            <Button
+              fullWidth
+              type="submit"
+              variant="contained"
+              sx={{ bgcolor: "purple" }}
+            >
+              Отправить
+            </Button>
+          </NavLink>
         </form>
       </section>
 
