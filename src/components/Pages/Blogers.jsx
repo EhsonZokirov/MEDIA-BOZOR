@@ -17,6 +17,7 @@ import manucher55 from "../img/Манучер55.jpg";
 import azik from "../img/azik.jpg";
 import nek from "../img/nek.jpg";
 import tara from "../img/tara.jpg";
+import Cards from "../Cards";
 
 function Blogers() {
   return (
@@ -26,310 +27,118 @@ function Blogers() {
         <h1 className="text-center font-bold text-4xl mb-10"> БЛОГЕРЫ </h1>
         <div className="grid xs:grid-cols-2 lg:grid-cols-3 m-auto text-center font-medium md:w-[80%] px-5 gap-5">
           {/* FOZILOV */}
-          <div className="m-auto hover:text-[#CC0909] hover:scale-105 cursor-pointer  rounded-md bg-red-100 md:w-[80%] shadow-md hover:shadow-xl transition-all duration-300 ">
-            <h1>Илхом</h1>
-            <img
-              className=" m-auto md:active:scale-150 transition-all  "
-              src={fozilov}
-              alt="IMG"
-            />
-            <div className="p-2 flex  justify-evenly">
-              <div>
-                <InstagramIcon />
-                <span className="hidden md:block"> 216k</span>
-              </div>
-              <div>
-                <YouTubeIcon />
-                <span className="hidden md:block"> 9.57k</span>
-              </div>
-              <div>
-                <LibraryMusicIcon />
-                <span className="hidden md:block"> 50k</span>
-              </div>
-            </div>
-          </div>
+          <Cards
+            img={fozilov}
+            name="Илхом"
+            inst="216k"
+            youtube="9.58k"
+            tiktok="50k"
+          />
           {/* Dilnaze */}
-          <div className="m-auto hover:text-[#CC0909] hover:scale-105 items-center cursor-pointer  rounded-md bg-red-100 md:w-[80%] shadow-md hover:shadow-xl transition-all duration-300 ">
-            <h1>Дилноза</h1>
-            <img
-              className=" m-auto md:active:scale-150 transition-all "
-              src={Dilnaze}
-              alt="IMG"
-            />
-            <div className="p-2 flex  justify-evenly">
-              <div>
-                <InstagramIcon />
-                <span className="hidden md:block"> 11k</span>
-              </div>
-
-              <div>
-                <LibraryMusicIcon />
-                <span className="hidden md:block"> 5k</span>
-              </div>
-            </div>
-          </div>
+          <Cards
+            img={Dilnaze}
+            name="Дилноза"
+            inst="11k"
+            youtube="0"
+            tiktok="5k"
+          />
           {/* ZANJABIL */}
-          <div className="m-auto hover:text-[#CC0909] hover:scale-105 items-center cursor-pointer  rounded-md bg-red-100 md:w-[80%] shadow-md hover:shadow-xl transition-all duration-300 ">
-            <h1>Матеош</h1>
-            <img
-              className=" m-auto md:active:scale-150 transition-all "
-              src={ZANJABIL}
-              alt="IMG"
-            />
-            <div className="p-2 flex  justify-evenly">
-              <div>
-                <InstagramIcon />
-                <span className="hidden md:block"> 262k</span>
-              </div>
-              <div>
-                <YouTubeIcon /> <span className="hidden md:block"> 158k</span>
-              </div>
-              <div>
-                <LibraryMusicIcon />
-                <span className="hidden md:block"> 150k</span>
-              </div>
-            </div>
-          </div>
+          <Cards
+            img={ZANJABIL}
+            name="Матеош"
+            inst="262k"
+            youtube="158k"
+            tiktok="150k"
+          />
           {/* JONON */}
-          <div className="m-auto hover:text-[#CC0909] hover:scale-105 items-center cursor-pointer  rounded-md bg-red-100 md:w-[80%] shadow-md hover:shadow-xl transition-all duration-300 ">
-            <h1>Jonon</h1>
-            <img
-              className=" m-auto md:active:scale-150 transition-all"
-              src={Jonon}
-              alt="IMG"
-            />
-            <div className="p-2 flex  justify-evenly">
-              <div>
-                <InstagramIcon />
-                <span className="hidden md:block"> 260k</span>
-              </div>
-              <div>
-                <YouTubeIcon /> <span className="hidden md:block"> 57k</span>
-              </div>
-              <div>
-                <LibraryMusicIcon />
-                <span className="hidden md:block"> 70k</span>
-              </div>
-            </div>
-          </div>
+          <Cards
+            img={Jonon}
+            name="Ҷонон"
+            inst="260k"
+            youtube="57k"
+            tiktok="70k"
+          />
           {/* AZIZ & RAHIMA */}
-          <div className="m-auto hover:text-[#CC0909] hover:scale-105 items-center cursor-pointer  rounded-md bg-red-100 md:w-[80%] shadow-md hover:shadow-xl transition-all duration-300 ">
-            <h1>Aziz & Rahima</h1>
-            <img
-              className=" m-auto md:active:scale-150 transition-all"
-              src={azizRahima}
-              alt="IMG"
-            />
-            <div className="p-2 flex  justify-evenly">
-              <div>
-                <InstagramIcon />
-                <span className="hidden md:block"> 729k</span>
-              </div>
-              <div>
-                <YouTubeIcon /> <span className="hidden md:block"> 17k</span>
-              </div>
-              <div>
-                <LibraryMusicIcon />
-                <span className="hidden md:block"> 450k</span>
-              </div>
-            </div>
-          </div>
+          <Cards
+            img={azizRahima}
+            name="Азиз ва Раҳима"
+            inst="729k"
+            youtube="17k"
+            tiktok="450k"
+          />
           {/* ZARKA */}
-          <div className="m-auto hover:text-[#CC0909] hover:scale-105 items-center cursor-pointer  rounded-md bg-red-100 md:w-[80%] shadow-md hover:shadow-xl transition-all duration-300 ">
-            <h1>Зарина</h1>
-            <img
-              className=" m-auto md:active:scale-150 transition-all"
-              src={zarka}
-              alt="IMG"
-            />
-            <div className="p-2 flex justify-evenly">
-              <div>
-                <InstagramIcon />
-                <span className="hidden md:block"> 255k</span>
-              </div>
-              <div>
-                <LibraryMusicIcon />
-                <span className="hidden md:block"> 150k</span>
-              </div>
-            </div>
-          </div>
+          <Cards
+            img={zarka}
+            name="Зарина"
+            inst="255k"
+            youtube="0"
+            tiktok="150k"
+          />
           {/* Фаридун */}
-          <div className="m-auto hover:text-[#CC0909] hover:scale-105 items-center cursor-pointer  rounded-md bg-red-100 md:w-[80%] shadow-md hover:shadow-xl transition-all duration-300 ">
-            <h1>Фаридун</h1>
-            <img
-              className=" m-auto md:active:scale-150 transition-all"
-              src={favik}
-              alt="IMG"
-            />
-            <div className="p-2 flex justify-evenly">
-              <div>
-                <InstagramIcon />
-                <span className="hidden md:block"> 313k</span>
-              </div>
-              <div>
-                <LibraryMusicIcon />
-                <span className="hidden md:block"> 150k</span>
-              </div>
-            </div>
-          </div>
+          <Cards
+            img={favik}
+            name="Фаридун"
+            inst="313k"
+            youtube="0"
+            tiktok="150k"
+          />
           {/* Малохат */}
-          <div className="m-auto hover:text-[#CC0909] hover:scale-105 items-center cursor-pointer  rounded-md bg-red-100 md:w-[80%] shadow-md hover:shadow-xl transition-all duration-300 ">
-            <h1>Малохат</h1>
-            <img
-              className=" m-auto md:active:scale-150 transition-all"
-              src={selena}
-              alt="IMG"
-            />
-            <div className="p-2 flex justify-evenly">
-              <div>
-                <InstagramIcon />
-                <span className="hidden md:block"> 185k</span>
-              </div>
-              <div>
-                <LibraryMusicIcon />
-                <span className="hidden md:block"> 22k</span>
-              </div>
-            </div>
-          </div>
+          <Cards
+            img={selena}
+            name="Малоҳат"
+            inst="185k"
+            youtube="0"
+            tiktok="22k"
+          />
           {/* Манучехр */}
-          <div className="m-auto hover:text-[#CC0909] hover:scale-105 items-center cursor-pointer  rounded-md bg-red-100 md:w-[80%] shadow-md hover:shadow-xl transition-all duration-300 ">
-            <h1>Манучехр</h1>
-            <img
-              className=" m-auto md:active:scale-150 transition-all"
-              src={manucher55}
-              alt="IMG"
-            />
-            <div className="p-2 flex justify-evenly">
-              <div>
-                <InstagramIcon />
-                <span className="hidden md:block"> 26,4k</span>
-              </div>
-              <div>
-                <LibraryMusicIcon />
-                <span className="hidden md:block"> 14k</span>
-              </div>
-            </div>
-          </div>
+          <Cards
+            img={manucher55}
+            name="Манучеҳр"
+            inst="26.4k"
+            youtube="6k"
+            tiktok="14k"
+          />
           {/* Насиба */}
-          <div className="m-auto hover:text-[#CC0909] hover:scale-105 items-center cursor-pointer  rounded-md bg-red-100 md:w-[80%] shadow-md hover:shadow-xl transition-all duration-300 ">
-            <h1>Насиба</h1>
-            <img
-              className=" m-auto md:active:scale-150 transition-all"
-              src={nasiba}
-              alt="IMG"
-            />
-            <div className="p-2 flex justify-evenly">
-              <div>
-                <InstagramIcon />
-                <span className="hidden md:block"> 11,1k</span>
-              </div>
-              <div>
-                <LibraryMusicIcon />
-                <span className="hidden md:block"> 5k</span>
-              </div>
-            </div>
-          </div>
+          <Cards
+            img={nasiba}
+            name="Насиба"
+            inst="11.1k"
+            youtube="0"
+            tiktok="5k"
+          />
           {/* Рафаэль */}
-          <div className="m-auto hover:text-[#CC0909] hover:scale-105 items-center cursor-pointer  rounded-md bg-red-100 md:w-[80%] shadow-md hover:shadow-xl transition-all duration-300 ">
-            <h1>Рафаэль</h1>
-            <img
-              className=" m-auto md:active:scale-150 transition-all"
-              src={rafael}
-              alt="IMG"
-            />
-            <div className="p-2 flex justify-evenly">
-              <div>
-                <InstagramIcon />
-                <span className="hidden md:block"> 249k</span>
-              </div>
-              <div>
-                <YouTubeIcon />
-                <span className="hidden md:block"> 113k</span>
-              </div>
-              <div>
-                <LibraryMusicIcon />
-                <span className="hidden md:block"> 150k</span>
-              </div>
-            </div>
-          </div>
+          <Cards
+            img={rafael}
+            name="Рафаел"
+            inst="249k"
+            youtube="113k"
+            tiktok="150k"
+          />
           {/* Ёсамин */}
-          <div className="m-auto hover:text-[#CC0909] hover:scale-105 items-center cursor-pointer  rounded-md bg-red-100 md:w-[80%] shadow-md hover:shadow-xl transition-all duration-300 ">
-            <h1>Ёсаминбону</h1>
-            <img
-              className=" m-auto md:active:scale-150 transition-all"
-              src={Yosamin}
-              alt="IMG"
-            />
-            <div className="p-2 flex justify-evenly">
-              <div>
-                <InstagramIcon />
-                <span className="hidden md:block"> 35,4k</span>
-              </div>
-            </div>
-          </div>
+          <Cards
+            img={Yosamin}
+            name="Ёсаминбону"
+            inst="35,5k"
+            youtube="0"
+            tiktok="0"
+          />
+
           {/* Некру */}
-          <div className="m-auto hover:text-[#CC0909] hover:scale-105 items-center cursor-pointer  rounded-md bg-red-100 md:w-[80%] shadow-md hover:shadow-xl transition-all duration-300 ">
-            <h1>Некру</h1>
-            <img
-              className=" m-auto md:active:scale-150 transition-all"
-              src={nek}
-              alt="IMG"
-            />
-            <div className="p-2 flex justify-evenly">
-              <div>
-                <InstagramIcon />
-                <span className="hidden md:block"> 634kk</span>
-              </div>
-              <div>
-                <YouTubeIcon />
-                <span className="hidden md:block"> 58,8k</span>
-              </div>
-              <div>
-                <LibraryMusicIcon />
-                <span className="hidden md:block"> 619,2k</span>
-              </div>
-            </div>
-          </div>
+          <Cards
+            img={nek}
+            name="Некру"
+            inst="703k"
+            youtube="58.8"
+            tiktok="619.2k"
+          />
           {/* Муатара */}
-          <div className="m-auto hover:text-[#CC0909] hover:scale-105 items-center cursor-pointer  rounded-md bg-red-100 md:w-[80%] shadow-md hover:shadow-xl transition-all duration-300 ">
-            <h1>Муатара</h1>
-            <img
-              className=" m-auto md:active:scale-150 transition-all"
-              src={tara}
-              alt="IMG"
-            />
-            <div className="p-2 flex justify-evenly">
-              <div>
-                <InstagramIcon />
-                <span className="hidden md:block"> 320k</span>
-              </div>
-              <div>
-                <LibraryMusicIcon />
-                <span className="hidden md:block"> 194k</span>
-              </div>
-            </div>
-          </div>
+          <Cards img={tara} name="Тара" inst="430k" youtube="0" tiktok="200k" />
+
           {/* azik */}
-          <div className="m-auto hover:text-[#CC0909] hover:scale-105 items-center cursor-pointer  rounded-md bg-red-100 md:w-[80%] shadow-md hover:shadow-xl transition-all duration-300 ">
-            <h1>Азиз</h1>
-            <img
-              className=" m-auto md:active:scale-150 transition-all"
-              src={azik}
-              alt="IMG"
-            />
-            <div className="p-2 flex justify-evenly">
-              <div>
-                <InstagramIcon />
-                <span className="hidden md:block"> 246k</span>
-              </div>
-              <div>
-                <LibraryMusicIcon />
-                <span className="hidden md:block"> 150k</span>
-              </div>
-            </div>
-          </div>
+          <Cards img={azik} name="Азиз" inst="247k" youtube="0" tiktok="350k" />
         </div>
       </section>
+      <div className="grid xs:grid-cols-2 lg:grid-cols-3 m-auto text-center font-medium md:w-[80%] px-5 gap-5"></div>
     </div>
   );
 }

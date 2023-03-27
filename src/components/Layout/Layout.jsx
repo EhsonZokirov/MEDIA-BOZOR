@@ -48,7 +48,6 @@ function Layout() {
           <ListItemText primary="Контакты" />
         </NavLink>
       </div>
-      
     </Box>
   );
 
