@@ -34,8 +34,8 @@ function Layout() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <div className="grid text-center items-start justify-evenly transition-all text-white bg-[#073648] h-[100vh] ">
-        <div className="m-10 space-x-1">
+      <div className="grid text-center items-start justify-evenly transition-all text-slate-400 bg-[#073648] h-[100vh] ">
+        <div className="m-10 space-x-1 ">
           <NavLink to="Blogers">
             <ListItemText primary="Блогеры" />
           </NavLink>
@@ -129,8 +129,12 @@ function Layout() {
         <div className=" hover:text-white cursor-pointer transition-all">
           zokirov_2000@mail.ru
         </div>
-        <address className=" hover:text-white transition-all">Dushanbe Tajikistan</address>
-        <div className=" hover:text-white cursor-pointer transition-all">+992 886 47 1212</div>
+        <address className=" hover:text-white transition-all">
+          Dushanbe Tajikistan
+        </address>
+        <div className=" hover:text-white cursor-pointer transition-all">
+          +992 886 47 1212
+        </div>
       </footer>
     </div>
   );
