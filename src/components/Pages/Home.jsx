@@ -32,7 +32,8 @@ function Home() {
               data-aos="fade-left"
               data-aos-offset="500"
               data-aos-easing="ease-in-sine"
-              className=" lg:w-[15%]"
+              data-aos-duration="1000"
+              className=" lg:w-[15%] z-10"
               src={logo}
               alt="logo"
             />
@@ -40,6 +41,7 @@ function Home() {
               data-aos="fade-right"
               data-aos-offset="500"
               data-aos-easing="ease-in-sine"
+              data-aos-duration="1000"
               className="font-bold text-[#CC0909] md:text-5xl text-5xl"
             >
               MEDIA <br /> BOZOR
@@ -63,8 +65,8 @@ function Home() {
               к бренду и увеличивают продажи.
             </p>
             <Button
-             data-aos="fade-up"
-             data-aos-duration="2000"
+              data-aos="fade-up"
+              data-aos-duration="2000"
               variant="contained"
               color="error"
               sx={{ width: "50%" }}
