@@ -110,7 +110,7 @@ function Layout() {
       </header>
       <Outlet />
       <footer>
-        <footer className="flex flex-wrap m-auto gap-5 justify-around p-5 text-xl text-slate-500 hover:text-red-500">
+        <footer className="flex flex-wrap m-auto gap-5 justify-around p-5 text-xl text-slate-900 hover:text-red-500">
           <div>reklamataj@mail.ru</div>
           <address>Dushanbe Tajikistan</address>
           <div>+992 886 47 1212</div>
