@@ -33,7 +33,7 @@ function Home() {
               data-aos-offset="500"
               data-aos-easing="ease-in-sine"
               data-aos-duration="1000"
-              className=" lg:w-[15%] z-10"
+              className=" lg:w-[15%]"
               src={logo}
               alt="logo"
             />
@@ -232,13 +232,7 @@ function Home() {
           </div>
         </section>
         {/* clients */}
-        <section
-          data-aos="fade-zoom-in"
-          data-aos-easing="ease-in-back"
-          data-aos-delay="500"
-          data-aos-offset="0"
-          className="container m-auto py-20"
-        >
+        <section className="container m-auto py-20">
           <h1 className="text-center pb-10 font-bold text-3xl">
             НАШИ КЛИЕНТЫ:
           </h1>

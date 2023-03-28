@@ -34,19 +34,21 @@ function Layout() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <div className="flex flex-wrap text-center justify-evenly transition-all text-white bg-[#073648] py-3">
-        <NavLink to="Blogers">
-          <ListItemText primary="Блогеры" />
-        </NavLink>
-        <NavLink to="Clients">
-          <ListItemText primary="Клиенты" />
-        </NavLink>
-        <NavLink to="Partners">
-          <ListItemText primary="Партнёры" />
-        </NavLink>
-        <NavLink to="Contacts">
-          <ListItemText primary="Контакты" />
-        </NavLink>
+      <div className="grid text-center items-start justify-evenly transition-all text-white bg-[#073648] h-[100vh] ">
+        <div className="m-10 space-x-1">
+          <NavLink to="Blogers">
+            <ListItemText primary="Блогеры" />
+          </NavLink>
+          <NavLink to="Clients">
+            <ListItemText primary="Клиенты" />
+          </NavLink>
+          <NavLink to="Partners">
+            <ListItemText primary="Партнёры" />
+          </NavLink>
+          <NavLink to="Contacts">
+            <ListItemText primary="Контакты" />
+          </NavLink>
+        </div>
       </div>
     </Box>
   );
@@ -61,8 +63,8 @@ function Layout() {
             </NavLink>
           </div>
           {/* Drawer */}
-          <div className="md:hidden ">
-            {["top"].map((anchor) => (
+          <div className="md:hidden">
+            {["left"].map((anchor) => (
               <React.Fragment key={anchor}>
                 <Button onClick={toggleDrawer(anchor, true)}>
                   {<MenuIcon color="error" fontSize="large" />}
@@ -104,21 +106,31 @@ function Layout() {
             >
               Контакты
             </NavLink>
+
+            <select className=" cursor-pointer font-serif text-center bg-transparent outline-none">
+              <option className="bg-purple-300 " value="">
+                Ru
+              </option>
+              <option className="bg-purple-300 " value="">
+                Tj
+              </option>
+              <option className="bg-purple-300 " value="">
+                En
+              </option>
+            </select>
           </div>
           {/* bar */}
         </nav>
       </header>
       <Outlet />
-      <footer>
-        <footer className="flex flex-wrap m-auto gap-5 justify-around p-5 text-xl text-slate-900">
-          <div className=" hover:text-white cursor-pointer">
-            zokirov_2000@mail.ru
-          </div>
-          <address className=" hover:text-white">Dushanbe Tajikistan</address>
-          <div className=" hover:text-white cursor-pointer">
-            +992 886 47 1212
-          </div>
-        </footer>
+
+      <hr />
+      <footer className="flex flex-wrap m-auto gap-5 justify-around p-5 text-xl text-slate-900">
+        <div className=" hover:text-white cursor-pointer">
+          zokirov_2000@mail.ru
+        </div>
+        <address className=" hover:text-white">Dushanbe Tajikistan</address>
+        <div className=" hover:text-white cursor-pointer">+992 886 47 1212</div>
       </footer>
     </div>
   );
