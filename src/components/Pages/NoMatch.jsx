@@ -14,7 +14,7 @@ function NoMatch() {
         />
         <div
           data-aos="fade-up"
-          data-aos-duration="3000"
+          data-aos-duration="1000"
           className="m-auto text-center mb-32"
         >
           <Link to="Home">

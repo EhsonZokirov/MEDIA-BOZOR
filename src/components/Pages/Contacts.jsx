@@ -27,41 +27,33 @@ function Contacts() {
             Напишите нам:
           </h1>
           <TextField
-            data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="500"
+            data-aos="fade-right"
             required
             variant="standard"
             label="Имя"
           />
           <TextField
-            data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="700"
+            data-aos="fade-left"
             required
             variant="standard"
             label=" Телефон"
             type="tel"
           />
           <TextField
-            data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="900"
+            data-aos="fade-right"
             required
             variant="standard"
             label=" Эл. Адрес"
           />
           <TextField
-            data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="1000"
+            data-aos="fade-left"
             required
             variant="filled"
             label="Сообщение"
             multiline
           />
 
-          <NavLink data-aos="fade-up" data-aos-duration="3000" to="NoMatch">
+          <NavLink data-aos="fade-up" data-aos-duration="500" to="NoMatch">
             <Button
               fullWidth
               type="submit"

@@ -57,13 +57,13 @@ function Layout() {
     <div>
       <header>
         <nav className="flex flex-wrap fixed w-[100%] backdrop-blur-[5px] z-10 items-center sm:font-bold py-2 px-5 md:px-0 justify-between md:justify-evenly list-none bg-[#ffffff4a]">
-          <div className="">
+          <div className="md:m-auto">
             <NavLink to="Home">
               <img className="w-[50px] transition-all" src={logo} alt="logo" />
             </NavLink>
           </div>
           {/* Drawer */}
-          <div className="md:hidden">
+          <div className="md:hidden ">
             {["left"].map((anchor) => (
               <React.Fragment key={anchor}>
                 <Button onClick={toggleDrawer(anchor, true)}>
@@ -81,27 +81,27 @@ function Layout() {
           </div>
           {/* Drawer */}
           {/* bar */}
-          <div className="hidden text-lg md:flex sm:gap-40 ">
+          <div className="hidden text-lg md:flex text-center m-auto  md:gap-20 lg:gap-40 ">
             <NavLink
-              className="hover:text-red-400 cursor-pointer transition"
+              className="hover:text-white cursor-pointer transition text-center m-auto"
               to="Blogers"
             >
               Блогеры
             </NavLink>
             <NavLink
-              className="hover:text-red-400 cursor-pointer transition"
+              className="hover:text-white cursor-pointer transition text-center m-auto"
               to="Clients"
             >
               Клиенты
             </NavLink>
             <NavLink
-              className="hover:text-red-400 cursor-pointer transition"
+              className="hover:text-white cursor-pointer transition text-center m-auto"
               to="Partners"
             >
               Партнеры
             </NavLink>
             <NavLink
-              className="hover:text-red-400 cursor-pointer transition"
+              className="hover:text-white cursor-pointer transition text-center m-auto"
               to="Contacts"
             >
               Контакты
@@ -126,11 +126,11 @@ function Layout() {
 
       <hr />
       <footer className="flex flex-wrap m-auto gap-5 justify-around p-5 text-xl text-slate-900">
-        <div className=" hover:text-white cursor-pointer">
+        <div className=" hover:text-white cursor-pointer transition-all">
           zokirov_2000@mail.ru
         </div>
-        <address className=" hover:text-white">Dushanbe Tajikistan</address>
-        <div className=" hover:text-white cursor-pointer">+992 886 47 1212</div>
+        <address className=" hover:text-white transition-all">Dushanbe Tajikistan</address>
+        <div className=" hover:text-white cursor-pointer transition-all">+992 886 47 1212</div>
       </footer>
     </div>
   );
