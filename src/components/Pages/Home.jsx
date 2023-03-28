@@ -13,9 +13,6 @@ import ZANJABIL from "../img/ZANJABIL.JPG";
 import Jonon from "../img/JONON.PNG";
 import azizRahima from "../img/AZIZ & Rahima.PNG";
 import zarka from "../img/ZARKA.PNG";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
-import LibraryMusicIcon from "@mui/icons-material/LibraryMusic";
 import humo from "../img/Humo_logo.png";
 import kayhon from "../img/kayhon.png";
 import kfc from "../img/Kfc_logo.png";
@@ -31,21 +28,43 @@ function Home() {
       <div className=" bg-[#ffffff4a] md:w-[80%] m-auto pt-10">
         <section className="py-[7%] lg:container m-auto">
           <div className=" flex items-center justify-center">
-            <img className=" lg:w-[15%]" src={logo} alt="logo" />
-            <div className="font-bold text-[#CC0909] md:text-5xl text-5xl">
+            <img
+              data-aos="fade-left"
+              data-aos-offset="500"
+              data-aos-easing="ease-in-sine"
+              className=" lg:w-[15%]"
+              src={logo}
+              alt="logo"
+            />
+            <div
+              data-aos="fade-right"
+              data-aos-offset="500"
+              data-aos-easing="ease-in-sine"
+              className="font-bold text-[#CC0909] md:text-5xl text-5xl"
+            >
               MEDIA <br /> BOZOR
             </div>
           </div>
           <div className="px-5 md:w-[60%] m-auto text-center mt-[40px]">
-            <h1 className="font-bold md:text-[35px] sm:text-3xl xs:text-md ">
+            <h1
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              className="font-bold md:text-[35px] sm:text-3xl xs:text-md "
+            >
               Увлеченная команда видеоблогеров и профессионалов рекламы
             </h1>
-            <p className="text-[10px]  md:text-[15px] my-10">
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1800"
+              className="text-[10px]  md:text-[15px] my-10"
+            >
               Мы реализуем рекламные проекты у блогеров, создавая решения для
               достижения наилучшего результата. Наши проекты повышают лояльность
               к бренду и увеличивают продажи.
             </p>
             <Button
+             data-aos="fade-up"
+             data-aos-duration="2000"
               variant="contained"
               color="error"
               sx={{ width: "50%" }}
@@ -55,13 +74,13 @@ function Home() {
             </Button>
           </div>
         </section>
-        {/*  */}
+        {/* work s nami */}
         <section className="container m-auto my-16">
           <h1 className="text-center font-bold text-2xl md:text-4xl my-20">
             Работая с нами, вы получаете:
           </h1>
           <div className=" grid grid-cols-2 lg:grid-cols-3 text-center gap-10 md:w-[70%] m-auto md:gap-28 my-10">
-            <div className="">
+            <div data-aos="zoom-out-right" className="">
               <div>
                 <CampaignIcon color="error" sx={{ fontSize: "100px" }} />
               </div>
@@ -71,7 +90,13 @@ function Home() {
                 крупные компании и известные бренды
               </p>
             </div>
-            <div className="">
+            <div
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="300"
+              data-aos-offset="0"
+              className=""
+            >
               <div>
                 <WorkHistoryIcon color="error" sx={{ fontSize: "100px" }} />
               </div>
@@ -84,7 +109,7 @@ function Home() {
                 , за те деньги, которые готовы отдать
               </p>
             </div>
-            <div className="">
+            <div data-aos="zoom-out-left" className="">
               <div>
                 <VolunteerActivismIcon
                   color="error"
@@ -100,7 +125,7 @@ function Home() {
                 у блогеров
               </p>
             </div>
-            <div className="">
+            <div data-aos="zoom-out-right" className="">
               <div>
                 <ThumbUpIcon color="error" sx={{ fontSize: "100px" }} />
               </div>
@@ -111,7 +136,12 @@ function Home() {
                 </span>
               </p>
             </div>
-            <div>
+            <div
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="300"
+              data-aos-offset="0"
+            >
               <div className="">
                 <SpatialAudioOffIcon color="error" sx={{ fontSize: "100px" }} />
               </div>
@@ -121,7 +151,7 @@ function Home() {
                 под ваш продукт
               </p>
             </div>
-            <div className="">
+            <div data-aos="zoom-out-left" className="">
               <div>
                 <MicIcon color="error" sx={{ fontSize: "100px" }} />
               </div>
@@ -186,7 +216,7 @@ function Home() {
             />
           </div>
           {/* ALL BLOGGERS BUTTON */}
-          <div className="m-auto text-center mt-20">
+          <div data-aos="zoom-in-up" className="m-auto text-center mt-20">
             <Link to="/Blogers">
               <Button
                 variant="contained"
@@ -200,7 +230,13 @@ function Home() {
           </div>
         </section>
         {/* clients */}
-        <section className="container m-auto py-20">
+        <section
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="500"
+          data-aos-offset="0"
+          className="container m-auto py-20"
+        >
           <h1 className="text-center pb-10 font-bold text-3xl">
             НАШИ КЛИЕНТЫ:
           </h1>

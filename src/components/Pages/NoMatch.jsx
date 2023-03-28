@@ -7,11 +7,16 @@ function NoMatch() {
     <div className="py-20 md:p-10">
       <div сlassName="">
         <img
+          data-aos="zoom-in"
           className="m-auto items-center self-center "
           src={error}
           alt="error 404"
         />
-        <div className="m-auto text-center mb-32">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="m-auto text-center mb-32"
+        >
           <Link to="Home">
             <Button variant="contained" color="error">
               Домой

@@ -5,17 +5,63 @@ import { NavLink } from "react-router-dom";
 function Contacts() {
   return (
     <div>
-      <h1 className="text-4xl font-bold text-center pt-[86px]">Контакты</h1>
+      <h1
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0"
+        className="text-4xl font-bold text-center pt-[86px]"
+      >
+        Контакты
+      </h1>
       {/* section */}
       <section className="py-[143px]">
         <form className="grid m-auto px-10 md:w-[40%]">
-          <h1 className=" font-mono text-lg text-center ">Напишите нам:</h1>
-          <TextField required variant="standard" label="Имя" />
-          <TextField required variant="standard" label=" Телефон" type="tel" />
-          <TextField required variant="standard" label=" Эл. Адрес" />
-          <TextField required variant="filled" label="Сообщение" multiline />
+          <h1
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+            className=" font-mono text-lg text-center "
+          >
+            Напишите нам:
+          </h1>
+          <TextField
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+            required
+            variant="standard"
+            label="Имя"
+          />
+          <TextField
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="700"
+            required
+            variant="standard"
+            label=" Телефон"
+            type="tel"
+          />
+          <TextField
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="900"
+            required
+            variant="standard"
+            label=" Эл. Адрес"
+          />
+          <TextField
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            required
+            variant="filled"
+            label="Сообщение"
+            multiline
+          />
 
-          <NavLink to="NoMatch">
+          <NavLink data-aos="fade-up" data-aos-duration="3000" to="NoMatch">
             <Button
               fullWidth
               type="submit"

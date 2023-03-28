@@ -5,9 +5,6 @@ import ZANJABIL from "../img/ZANJABIL.JPG";
 import Jonon from "../img/JONON.PNG";
 import azizRahima from "../img/AZIZ & Rahima.PNG";
 import zarka from "../img/ZARKA.PNG";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
-import LibraryMusicIcon from "@mui/icons-material/LibraryMusic";
 import favik from "../img/FAVIK.jpg";
 import nasiba from "../img/Nasiba.JPG";
 import selena from "../img/Selena.jpg";
@@ -128,7 +125,7 @@ function Blogers() {
             img={nek}
             name="Некру"
             inst="703k"
-            youtube="58.8"
+            youtube="58.8k"
             tiktok="619.2k"
           />
           {/* Муатара */}
