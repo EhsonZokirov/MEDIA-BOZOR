@@ -110,10 +110,14 @@ function Layout() {
       </header>
       <Outlet />
       <footer>
-        <footer className="flex flex-wrap m-auto gap-5 justify-around p-5 text-xl text-slate-900 hover:text-red-500">
-          <div>reklamataj@mail.ru</div>
-          <address>Dushanbe Tajikistan</address>
-          <div>+992 886 47 1212</div>
+        <footer className="flex flex-wrap m-auto gap-5 justify-around p-5 text-xl text-slate-900">
+          <div className=" hover:text-white cursor-pointer">
+            zokirov_2000@mail.ru
+          </div>
+          <address className=" hover:text-white">Dushanbe Tajikistan</address>
+          <div className=" hover:text-white cursor-pointer">
+            +992 886 47 1212
+          </div>
         </footer>
       </footer>
     </div>
