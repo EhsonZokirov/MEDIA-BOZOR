@@ -23,6 +23,12 @@ import alif from "../img/alif_en.png";
 import { Link } from "react-router-dom";
 import Cards from "../Cards";
 function Home() {
+  let sovet = () => {
+    return alert(`
+       +992 886 47 1212 
+    занг бза чақ чақ менем`);
+  };
+
   return (
     <div>
       <div className=" bg-[#ffffff4a] md:w-[80%] m-auto pt-10">
@@ -71,6 +77,9 @@ function Home() {
               color="error"
               sx={{ width: "50%" }}
               className="animate-pulse"
+              onClick={() => {
+                sovet();
+              }}
             >
               СОВЕТ
             </Button>
