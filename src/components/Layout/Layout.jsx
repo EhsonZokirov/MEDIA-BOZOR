@@ -8,6 +8,7 @@ import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 import ListItemText from "@mui/material/ListItemText";
+
 function Layout() {
   const [state, setState] = useState({
     top: false,
@@ -63,7 +64,7 @@ function Layout() {
             </NavLink>
           </div>
           {/* Drawer */}
-          <div className="md:hidden ">
+          <div className="md:hidden  ">
             {["left"].map((anchor) => (
               <React.Fragment key={anchor}>
                 <Button onClick={toggleDrawer(anchor, true)}>
@@ -81,7 +82,7 @@ function Layout() {
           </div>
           {/* Drawer */}
           {/* bar */}
-          <div className="hidden text-lg md:flex text-center m-auto  md:gap-20 lg:gap-40 ">
+          <div className="hidden text-lg md:flex m-auto  md:gap-20 lg:gap-40 ">
             <NavLink
               className="hover:text-white cursor-pointer transition text-center m-auto"
               to="Blogers"
@@ -106,22 +107,11 @@ function Layout() {
             >
               Контакты
             </NavLink>
-
-            <select className=" cursor-pointer font-serif text-center bg-transparent outline-none">
-              <option className="bg-purple-300 " value="">
-                Ru
-              </option>
-              <option className="bg-purple-300 " value="">
-                Tj
-              </option>
-              <option className="bg-purple-300 " value="">
-                En
-              </option>
-            </select>
           </div>
           {/* bar */}
         </nav>
       </header>
+
       <Outlet />
 
       <hr />

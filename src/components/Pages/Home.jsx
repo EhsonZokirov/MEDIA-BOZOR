@@ -22,6 +22,19 @@ import megafon from "../img/мегафон.png";
 import alif from "../img/alif_en.png";
 import { Link } from "react-router-dom";
 import Cards from "../Cards";
+import Box from "@mui/material/Box";
+import SpeedDial from "@mui/material/SpeedDial";
+import LanguageIcon from "@mui/icons-material/Language";
+import SpeedDialAction from "@mui/material/SpeedDialAction";
+import ru from "../img/russia.png";
+import usa from "../img/usa.png";
+import tj from "../img/tajikistan.png";
+
+const actions = [
+  { icon: <img src={ru} />, name: "Russian" },
+  { icon: <img src={usa} />, name: "English" },
+  { icon: <img src={tj} />, name: "Tajik" },
+];
 function Home() {
   let sovet = () => {
     return alert(`
@@ -31,6 +44,30 @@ function Home() {
 
   return (
     <div>
+      <Box
+        sx={{
+          position: "fixed",
+          bottom: 20,
+          right: 16,
+          height: 360,
+          transform: "translateZ(0px)",
+          flexGrow: 1,
+          zIndex: "9",
+        }}
+      >
+        <SpeedDial
+          ariaLabel="SpeedDial basic example"
+          icon={<LanguageIcon fontSize="large" />}
+        >
+          {actions.map((action) => (
+            <SpeedDialAction
+              key={action.name}
+              icon={action.icon}
+              tooltipTitle={action.name}
+            />
+          ))}
+        </SpeedDial>
+      </Box>
       <div className=" bg-[#ffffff4a] md:w-[80%] m-auto pt-10">
         <section className="py-[7%] lg:container m-auto">
           <div className=" flex items-center justify-center">
@@ -44,7 +81,7 @@ function Home() {
               alt="logo"
             />
             <div
-              data-aos="fade-right"
+              data-aos="flip-up"
               data-aos-offset="500"
               data-aos-easing="ease-in-sine"
               data-aos-duration="1000"
@@ -91,7 +128,7 @@ function Home() {
             Работая с нами, вы получаете:
           </h1>
           <div className=" grid grid-cols-2 lg:grid-cols-3 text-center gap-10 md:w-[70%] m-auto md:gap-28 my-10">
-            <div data-aos="zoom-out-right" className="">
+            <div data-aos="flip-up" className="">
               <div>
                 <CampaignIcon color="error" sx={{ fontSize: "100px" }} />
               </div>
@@ -101,26 +138,17 @@ function Home() {
                 крупные компании и известные бренды
               </p>
             </div>
-            <div
-              data-aos="fade-zoom-in"
-              data-aos-easing="ease-in-back"
-              data-aos-delay="300"
-              data-aos-offset="0"
-              className=""
-            >
+            <div data-aos="flip-down" className="">
               <div>
                 <WorkHistoryIcon color="error" sx={{ fontSize: "100px" }} />
               </div>
               <p className="text-[15px] md:text-md">
                 Тот результат,
-                <span className="font-bold">
-                  {" "}
-                  который вы хотите от рекламы{" "}
-                </span>
-                , за те деньги, которые готовы отдать
+                <span className="font-bold">который вы хотите от рекламы</span>,
+                за те деньги, которые готовы отдать
               </p>
             </div>
-            <div data-aos="zoom-out-left" className="">
+            <div data-aos="flip-up" className="">
               <div>
                 <VolunteerActivismIcon
                   color="error"
@@ -129,14 +157,11 @@ function Home() {
               </div>
               <p className="text-[15px] md:text-md">
                 Cамый
-                <span className="font-bold">
-                  {" "}
-                  эффективный способ размещения{" "}
-                </span>
+                <span className="font-bold">эффективный способ размещения</span>
                 у блогеров
               </p>
             </div>
-            <div data-aos="zoom-out-right" className="">
+            <div data-aos="flip-up" className="">
               <div>
                 <ThumbUpIcon color="error" sx={{ fontSize: "100px" }} />
               </div>
@@ -147,12 +172,7 @@ function Home() {
                 </span>
               </p>
             </div>
-            <div
-              data-aos="fade-zoom-in"
-              data-aos-easing="ease-in-back"
-              data-aos-delay="300"
-              data-aos-offset="0"
-            >
+            <div data-aos="flip-down">
               <div className="">
                 <SpatialAudioOffIcon color="error" sx={{ fontSize: "100px" }} />
               </div>
@@ -162,7 +182,7 @@ function Home() {
                 под ваш продукт
               </p>
             </div>
-            <div data-aos="zoom-out-left" className="">
+            <div data-aos="flip-up" className="">
               <div>
                 <MicIcon color="error" sx={{ fontSize: "100px" }} />
               </div>
@@ -178,21 +198,25 @@ function Home() {
           <h1 className="text-center font-bold text-4xl mb-10"> БЛОГЕРЫ </h1>
           <div className="grid xs:grid-cols-2 lg:grid-cols-3 m-auto text-center font-medium md:w-[80%] px-5 gap-5">
             {/* FOZILOV */}
-            <Cards
-              img={fozilov}
-              name="Илхом"
-              inst="216k"
-              youtube="9.58k"
-              tiktok="50k"
-            />
+            <Link to="/user/1/">
+              <Cards
+                img={fozilov}
+                name="Илхом"
+                inst="216k"
+                youtube="9.58k"
+                tiktok="50k"
+              />
+            </Link>
             {/* Dilnaze */}
-            <Cards
-              img={Dilnaze}
-              name="Дилноза"
-              inst="11k"
-              youtube="0"
-              tiktok="5k"
-            />
+            <Link to="/user/5">
+              <Cards
+                img={Dilnaze}
+                name="Дилноза"
+                inst="11k"
+                youtube="0"
+                tiktok="5k"
+              />
+            </Link>
             {/* ZANJABIL */}
             <Cards
               img={ZANJABIL}

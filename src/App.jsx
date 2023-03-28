@@ -8,6 +8,7 @@ import Partners from "./components/Pages/Partners";
 import Contacts from "./components/Pages/Contacts";
 import NoMatch from "./components/Pages/NoMatch";
 import "./App.css";
+import UserById from "./components/Pages/UserById";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
             <Route path="/Clients" element={<Clients />} />
             <Route path="/Partners" element={<Partners />} />
             <Route path="/Contacts" element={<Contacts />} />
-            <Route path="/*" element={<NoMatch />} />
+            <Route path="/user/:id" element={<UserById />} />
+            <Route path="*" element={<NoMatch />} />
           </Route>
         </Routes>
       </div>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import error from "../img/4o4.png";
 function NoMatch() {
   return (
-    <div className="py-20 md:p-10">
+    <div className="py-40 md:p-10">
       <div сlassName="">
         <img
           data-aos="zoom-in"
