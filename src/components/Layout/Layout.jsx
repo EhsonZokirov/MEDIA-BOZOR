@@ -9,7 +9,6 @@ import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 import ListItemText from "@mui/material/ListItemText";
 import SpeedDial from "@mui/material/SpeedDial";
-// import LanguageIcon from "@mui/icons-material/Language";
 import TranslateIcon from "@mui/icons-material/Translate";
 import SpeedDialAction from "@mui/material/SpeedDialAction";
 import ru from "../img/russia.png";
@@ -98,7 +97,7 @@ function Layout() {
       </Box>
       {/* LANGUAGE */}
       <header>
-        <nav className="flex justify-between md:justify-center fixed w-[100%] backdrop-blur-[5px] z-10 items-center sm:font-bold py-2 px-5 md:px-0 list-none bg-[#ffffff4a]">
+        <nav className="flex justify-between md:justify-center fixed w-[100%] backdrop-blur-[5px] z-10 items-center py-2 px-5 md:px-0 list-none text-slate-300 bg-[#0000004a]">
           <div className="md:m-auto">
             <NavLink to="Home">
               <img className="w-[50px]  transition-all" src={logo} alt="logo" />
@@ -138,7 +137,7 @@ function Layout() {
             {["left"].map((anchor) => (
               <React.Fragment key={anchor}>
                 <Button onClick={toggleDrawer(anchor, true)}>
-                  {<MenuIcon color="error" fontSize="large" />}
+                  {<MenuIcon color="action" fontSize="large" />}
                 </Button>
                 <Drawer
                   anchor={anchor}

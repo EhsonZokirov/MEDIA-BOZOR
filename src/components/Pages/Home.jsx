@@ -162,33 +162,33 @@ function Home() {
           <h1 className="text-center font-bold text-4xl mb-10"> БЛОГЕРЫ </h1>
           <div className="grid xs:grid-cols-2 lg:grid-cols-3 m-auto text-center font-medium md:w-[80%] px-5 gap-5">
             {/* FOZILOV */}
-            <Link to="/user/1/">
-              <Cards
-                img={fozilov}
-                name="Илхом"
-                inst="216k"
-                youtube="9.58k"
-                tiktok="50k"
-              />
-            </Link>
-            {/* Dilnaze */}
-            <Link to="/user/5">
-              <Cards
-                img={Dilnaze}
-                name="Дилноза"
-                inst="11k"
-                youtube="0"
-                tiktok="5k"
-              />
-            </Link>
-            {/* ZANJABIL */}
             <Cards
-              img={ZANJABIL}
-              name="ZanjabilBro"
-              inst="262k"
-              youtube="158k"
-              tiktok="150k"
+              img={fozilov}
+              name="Илхом"
+              inst="216k"
+              youtube="9.58k"
+              tiktok="50k"
             />
+            {/* Dilnaze */}
+
+            <Cards
+              img={Dilnaze}
+              name="Дилноза"
+              inst="11k"
+              youtube="0"
+              tiktok="5k"
+            />
+
+            <Link to="/user/3">
+              {/* ZANJABIL */}
+              <Cards
+                img={ZANJABIL}
+                name="ZanjabilBro"
+                inst="262k"
+                youtube="158k"
+                tiktok="150k"
+              />
+            </Link>
             {/* JONON */}
             <Cards
               img={Jonon}
