@@ -8,6 +8,13 @@ import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 import ListItemText from "@mui/material/ListItemText";
+import SpeedDial from "@mui/material/SpeedDial";
+// import LanguageIcon from "@mui/icons-material/Language";
+import TranslateIcon from "@mui/icons-material/Translate";
+import SpeedDialAction from "@mui/material/SpeedDialAction";
+import ru from "../img/russia.png";
+import en from "../img/England.png";
+import tj from "../img/tajikistan.png";
 
 function Layout() {
   const [state, setState] = useState({
@@ -36,7 +43,7 @@ function Layout() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <div className="grid text-center items-start justify-evenly transition-all text-slate-400 bg-[#073648] h-[100vh] ">
-        <div className="m-10 space-x-1 ">
+        <div className="m-10 space-x-1 text-start ">
           <NavLink to="Blogers">
             <ListItemText primary="Блогеры" />
           </NavLink>
@@ -56,33 +63,50 @@ function Layout() {
 
   return (
     <div>
+      {/* LANGUAGE */}
+      <Box
+        sx={{
+          position: "fixed",
+          bottom: 20,
+          right: 16,
+          height: 300,
+          transform: "translateZ(0px)",
+          flexGrow: 1,
+          zIndex: "9",
+        }}
+      >
+        <SpeedDial
+          ariaLabel="SpeedDial basic example"
+          icon={<TranslateIcon fontSize="large" />}
+        >
+          <SpeedDialAction
+            onClick={() => alert("Русский")}
+            icon={<img src={ru} alt="Русский" />}
+            tooltipTitle="Русский"
+          />
+          <SpeedDialAction
+            onClick={() => alert("English")}
+            icon={<img src={en} alt="English" />}
+            tooltipTitle="English"
+          />
+          <SpeedDialAction
+            onClick={() => alert("Тоҷикӣ")}
+            icon={<img src={tj} alt="Тоҷикӣ" />}
+            tooltipTitle="Тоҷикӣ"
+          />
+        </SpeedDial>
+      </Box>
+      {/* LANGUAGE */}
       <header>
-        <nav className="flex flex-wrap fixed w-[100%] backdrop-blur-[5px] z-10 items-center sm:font-bold py-2 px-5 md:px-0 justify-between md:justify-evenly list-none bg-[#ffffff4a]">
+        <nav className="flex justify-between md:justify-center fixed w-[100%] backdrop-blur-[5px] z-10 items-center sm:font-bold py-2 px-5 md:px-0 list-none bg-[#ffffff4a]">
           <div className="md:m-auto">
             <NavLink to="Home">
-              <img className="w-[50px] transition-all" src={logo} alt="logo" />
+              <img className="w-[50px]  transition-all" src={logo} alt="logo" />
             </NavLink>
           </div>
-          {/* Drawer */}
-          <div className="md:hidden  ">
-            {["left"].map((anchor) => (
-              <React.Fragment key={anchor}>
-                <Button onClick={toggleDrawer(anchor, true)}>
-                  {<MenuIcon color="error" fontSize="large" />}
-                </Button>
-                <Drawer
-                  anchor={anchor}
-                  open={state[anchor]}
-                  onClose={toggleDrawer(anchor, false)}
-                >
-                  {list(anchor)}
-                </Drawer>
-              </React.Fragment>
-            ))}
-          </div>
-          {/* Drawer */}
+
           {/* bar */}
-          <div className="hidden text-lg md:flex m-auto  md:gap-20 lg:gap-40 ">
+          <div className="hidden transition-all md:flex md:ml-0 m-auto  md:gap-20 lg:gap-32 ">
             <NavLink
               className="hover:text-white cursor-pointer transition text-center m-auto"
               to="Blogers"
@@ -109,6 +133,24 @@ function Layout() {
             </NavLink>
           </div>
           {/* bar */}
+          {/* Drawer */}
+          <div className="md:hidden">
+            {["left"].map((anchor) => (
+              <React.Fragment key={anchor}>
+                <Button onClick={toggleDrawer(anchor, true)}>
+                  {<MenuIcon color="error" fontSize="large" />}
+                </Button>
+                <Drawer
+                  anchor={anchor}
+                  open={state[anchor]}
+                  onClose={toggleDrawer(anchor, false)}
+                >
+                  {list(anchor)}
+                </Drawer>
+              </React.Fragment>
+            ))}
+          </div>
+          {/* Drawer */}
         </nav>
       </header>
 

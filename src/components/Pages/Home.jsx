@@ -22,19 +22,7 @@ import megafon from "../img/мегафон.png";
 import alif from "../img/alif_en.png";
 import { Link } from "react-router-dom";
 import Cards from "../Cards";
-import Box from "@mui/material/Box";
-import SpeedDial from "@mui/material/SpeedDial";
-import LanguageIcon from "@mui/icons-material/Language";
-import SpeedDialAction from "@mui/material/SpeedDialAction";
-import ru from "../img/russia.png";
-import usa from "../img/usa.png";
-import tj from "../img/tajikistan.png";
 
-const actions = [
-  { icon: <img src={ru} />, name: "Russian" },
-  { icon: <img src={usa} />, name: "English" },
-  { icon: <img src={tj} />, name: "Tajik" },
-];
 function Home() {
   let sovet = () => {
     return alert(`
@@ -44,30 +32,6 @@ function Home() {
 
   return (
     <div>
-      <Box
-        sx={{
-          position: "fixed",
-          bottom: 20,
-          right: 16,
-          height: 360,
-          transform: "translateZ(0px)",
-          flexGrow: 1,
-          zIndex: "9",
-        }}
-      >
-        <SpeedDial
-          ariaLabel="SpeedDial basic example"
-          icon={<LanguageIcon fontSize="large" />}
-        >
-          {actions.map((action) => (
-            <SpeedDialAction
-              key={action.name}
-              icon={action.icon}
-              tooltipTitle={action.name}
-            />
-          ))}
-        </SpeedDial>
-      </Box>
       <div className=" bg-[#ffffff4a] md:w-[80%] m-auto pt-10">
         <section className="py-[7%] lg:container m-auto">
           <div className=" flex items-center justify-center">
