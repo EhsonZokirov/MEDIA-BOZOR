@@ -157,7 +157,7 @@ function Layout() {
       <Outlet />
 
       <hr />
-      <footer className="flex flex-wrap m-auto gap-5 justify-around p-5 text-xl text-slate-900">
+      <footer className="flex flex-wrap m-auto gap-5 justify-around p-5 sm:text-xl text-slate-900">
         <div className=" hover:text-white cursor-pointer transition-all">
           zokirov_2000@mail.ru
         </div>

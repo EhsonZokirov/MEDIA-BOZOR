@@ -33,25 +33,26 @@ function Home() {
   return (
     <div>
       <div className=" bg-[#ffffff4a] md:w-[80%] m-auto pt-10">
-        <section className="py-[7%] lg:container m-auto">
-          <div className=" flex items-center justify-center">
+        <section className="py-[20%] md:py-[10%] lg:container m-auto">
+          <div className=" flex flex-wrap items-center justify-center">
             <img
               data-aos="fade-left"
               data-aos-offset="500"
               data-aos-easing="ease-in-sine"
-              data-aos-duration="1000"
-              className=" lg:w-[15%]"
+              data-aos-duration="300"
+              className="z-[5] "
               src={logo}
               alt="logo"
             />
-            <div
-              data-aos="flip-up"
-              data-aos-offset="500"
-              data-aos-easing="ease-in-sine"
-              data-aos-duration="1000"
-              className="font-bold text-[#CC0909] md:text-5xl text-5xl"
-            >
-              MEDIA <br /> BOZOR
+            <div className="font-bold text-[#CC0909]  text-5xl ">
+              <p
+                data-aos="fade-right"
+                data-aos-offset="500"
+                data-aos-easing="ease in"
+                data-aos-duration="500"
+              >
+                MEDIA <br /> BOZOR
+              </p>
             </div>
           </div>
           <div className="px-5 md:w-[60%] m-auto text-center mt-[40px]">
@@ -77,7 +78,6 @@ function Home() {
               variant="contained"
               color="error"
               sx={{ width: "50%" }}
-              className="animate-pulse"
               onClick={() => {
                 sovet();
               }}
@@ -88,10 +88,10 @@ function Home() {
         </section>
         {/* work s nami */}
         <section className="container m-auto my-16">
-          <h1 className="text-center font-bold text-2xl md:text-4xl my-20">
+          <h1 className="text-center font-bold sm:text-2xl md:text-4xl my-20">
             Работая с нами, вы получаете:
           </h1>
-          <div className=" grid grid-cols-2 lg:grid-cols-3 text-center gap-10 md:w-[70%] m-auto md:gap-28 my-10">
+          <div className=" grid xs:grid-cols-2 lg:grid-cols-3 text-center gap-10 md:w-[70%] m-auto md:gap-28 my-10">
             <div data-aos="flip-up" className="">
               <div>
                 <CampaignIcon color="error" sx={{ fontSize: "100px" }} />
