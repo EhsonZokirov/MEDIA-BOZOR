@@ -22,6 +22,7 @@ import megafon from "../img/мегафон.png";
 import alif from "../img/alif_en.png";
 import { Link } from "react-router-dom";
 import Cards from "../Cards";
+import { useTranslation } from "react-i18next";
 
 function Home() {
   let sovet = () => {
@@ -29,7 +30,7 @@ function Home() {
        +992 886 47 1212 
     занг бза чақ чақ менем`);
   };
-
+  const { t } = useTranslation();
   return (
     <div>
       <div className=" bg-[#ffffff4a] md:w-[80%] m-auto pt-10">
@@ -51,7 +52,7 @@ function Home() {
                 data-aos-easing="ease in"
                 data-aos-duration="500"
               >
-                MEDIA <br /> BOZOR
+                {t("MEDIA")} <br /> {t("BOZOR")}
               </p>
             </div>
           </div>
@@ -61,16 +62,16 @@ function Home() {
               data-aos-duration="1000"
               className="font-bold md:text-[35px] sm:text-3xl xs:text-md "
             >
-              Увлеченная команда видеоблогеров и профессионалов рекламы
+              {t("Увлеченная команда видеоблогеров и профессионалов рекламы")}
             </h1>
             <p
               data-aos="fade-up"
               data-aos-duration="1800"
               className="text-[10px]  md:text-[15px] my-10"
             >
-              Мы реализуем рекламные проекты у блогеров, создавая решения для
-              достижения наилучшего результата. Наши проекты повышают лояльность
-              к бренду и увеличивают продажи.
+              {t(
+                "Мы реализуем рекламные проекты у блогеров, создавая решения для достижения наилучшего результата. Наши проекты повышают лояльность к бренду и увеличивают продажи."
+              )}
             </p>
             <Button
               data-aos="fade-up"
@@ -82,14 +83,14 @@ function Home() {
                 sovet();
               }}
             >
-              СОВЕТ
+              {t("СОВЕТ")}
             </Button>
           </div>
         </section>
         {/* work s nami */}
         <section className="container m-auto my-16">
-          <h1 className="text-center font-bold sm:text-2xl md:text-4xl my-20">
-            Работая с нами, вы получаете:
+          <h1 className="text-center font-bold text-[30px] lg:text-4xl my-20">
+            {t("Работая с нами, вы получаете")}:
           </h1>
           <div className=" grid xs:grid-cols-2 lg:grid-cols-3 text-center gap-10 md:w-[70%] m-auto md:gap-28 my-10">
             <div data-aos="flip-up" className="">
@@ -108,8 +109,11 @@ function Home() {
               </div>
               <p className="text-[15px] md:text-md">
                 Тот результат,
-                <span className="font-bold">который вы хотите от рекламы</span>,
-                за те деньги, которые готовы отдать
+                <span className="font-bold">
+                  {" "}
+                  который вы хотите от рекламы{" "}
+                </span>
+                , за те деньги, которые готовы отдать
               </p>
             </div>
             <div data-aos="flip-up" className="">
@@ -121,7 +125,10 @@ function Home() {
               </div>
               <p className="text-[15px] md:text-md">
                 Cамый
-                <span className="font-bold">эффективный способ размещения</span>
+                <span className="font-bold">
+                  {" "}
+                  эффективный способ размещения{" "}
+                </span>
                 у блогеров
               </p>
             </div>
@@ -130,7 +137,7 @@ function Home() {
                 <ThumbUpIcon color="error" sx={{ fontSize: "100px" }} />
               </div>
               <p className="text-[15px] md:text-md">
-                Охват любой аудитории с
+                Охват любой аудитории с{" "}
                 <span className="font-bold">
                   максимально высокой конверсией
                 </span>

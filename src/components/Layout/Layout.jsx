@@ -15,7 +15,12 @@ import ru from "../img/russia.png";
 import en from "../img/England.png";
 import tj from "../img/tajikistan.png";
 
+import { useTranslation } from "react-i18next";
 function Layout() {
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
   const [state, setState] = useState({
     top: false,
     left: false,
@@ -75,21 +80,30 @@ function Layout() {
         }}
       >
         <SpeedDial
+          onChange={(e) => {
+            changeLanguage(e.target.value);
+          }}
           ariaLabel="SpeedDial basic example"
           icon={<TranslateIcon fontSize="large" />}
         >
           <SpeedDialAction
-            onClick={() => alert("Русский")}
+            onClick={() => {
+              changeLanguage("Ru");
+            }}
             icon={<img src={ru} alt="Русский" />}
             tooltipTitle="Русский"
           />
           <SpeedDialAction
-            onClick={() => alert("English")}
+            onClick={() => {
+              changeLanguage("En");
+            }}
             icon={<img src={en} alt="English" />}
             tooltipTitle="English"
           />
           <SpeedDialAction
-            onClick={() => alert("Тоҷикӣ")}
+            onClick={() => {
+              changeLanguage("Tj");
+            }}
             icon={<img src={tj} alt="Тоҷикӣ" />}
             tooltipTitle="Тоҷикӣ"
           />
@@ -110,25 +124,25 @@ function Layout() {
               className="hover:text-white cursor-pointer transition text-center m-auto"
               to="Blogers"
             >
-              Блогеры
+              {t("Блогеры")}
             </NavLink>
             <NavLink
               className="hover:text-white cursor-pointer transition text-center m-auto"
               to="Clients"
             >
-              Клиенты
+              {t("Клиенты")}
             </NavLink>
             <NavLink
               className="hover:text-white cursor-pointer transition text-center m-auto"
               to="Partners"
             >
-              Партнеры
+              {t("Партнеры")}
             </NavLink>
             <NavLink
               className="hover:text-white cursor-pointer transition text-center m-auto"
               to="Contacts"
             >
-              Контакты
+              {t("Контакты")}
             </NavLink>
           </div>
           {/* bar */}
