@@ -14,20 +14,18 @@ function App() {
   return (
     <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
       {/* ROUTER */}
-      <div>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index="/Home" element={<Home />} />
-            <Route path="/Home" element={<Home />} />
-            <Route path="/Blogers" element={<Blogers />} />
-            <Route path="/Clients" element={<Clients />} />
-            <Route path="/Partners" element={<Partners />} />
-            <Route path="/Contacts" element={<Contacts />} />
-            <Route path="/user/:id" element={<UserById />} />
-            <Route path="*" element={<NoMatch />} />
-          </Route>
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index="/Home" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
+          <Route path="/Blogers" element={<Blogers />} />
+          <Route path="/Clients" element={<Clients />} />
+          <Route path="/Partners" element={<Partners />} />
+          <Route path="/Contacts" element={<Contacts />} />
+          <Route path="/user/:id" element={<UserById />} />
+          <Route path="*" element={<NoMatch />} />
+        </Route>
+      </Routes>
     </div>
   );
 }

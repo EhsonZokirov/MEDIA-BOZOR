@@ -45,14 +45,14 @@ function Home() {
               src={logo}
               alt="logo"
             />
-            <div className="font-bold text-[#CC0909]  text-5xl ">
+            <div className="font-bold text-[#cc0909e2]  text-5xl ">
               <p
                 data-aos="fade-right"
                 data-aos-offset="500"
                 data-aos-easing="ease in"
                 data-aos-duration="500"
               >
-                {t("MEDIA")} <br /> {t("BOZOR")}
+                <span className="text-indigo-500"> {t("MEDIA")}</span> <br /> {t("BOZOR")}
               </p>
             </div>
           </div>
@@ -166,7 +166,10 @@ function Home() {
         </section>
         {/* blogger cards  */}
         <section className=" py-10 lg:container m-auto">
-          <h1 className="text-center font-bold text-4xl mb-10"> БЛОГЕРЫ </h1>
+          <h1 className="text-center font-bold text-4xl mb-10">
+            {" "}
+            {t("БЛОГЕРЫ")}{" "}
+          </h1>
           <div className="grid xs:grid-cols-2 lg:grid-cols-3 m-auto text-center font-medium md:w-[80%] px-5 gap-5">
             {/* FOZILOV */}
             <Cards
@@ -230,7 +233,7 @@ function Home() {
                 size="large"
                 sx={{ width: "50%", fontFamily: "unset" }}
               >
-                ВСЕ БЛОГЕРЫ
+                {t("ВСЕ БЛОГЕРЫ")}
               </Button>
             </Link>
           </div>
@@ -238,7 +241,7 @@ function Home() {
         {/* clients */}
         <section className="container m-auto py-20">
           <h1 className="text-center pb-10 font-bold text-3xl">
-            НАШИ КЛИЕНТЫ:
+            {t("НАШИ КЛИЕНТЫ")}:
           </h1>
           <section className=" grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 w-[50%] lg:w-[75%] m-auto">
             <div className="m-auto flex items-center">

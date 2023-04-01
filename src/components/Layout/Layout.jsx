@@ -175,7 +175,7 @@ function Layout() {
           zokirov_2000@mail.ru
         </div>
         <address className=" hover:text-white transition-all">
-          Dushanbe Tajikistan
+          {t("Душанбе Таджикистан")}
         </address>
         <div className=" hover:text-white cursor-pointer transition-all">
           +992 886 47 1212

@@ -4,3 +4,10 @@
     background-size: cover;
     background-attachment: fixed;
 }
+
+body {
+    background: linear-gradient(rgb(153, 0, 255), rgb(198, 119, 255));
+    background-attachment: fixed;
+}
+
+/* bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 */
