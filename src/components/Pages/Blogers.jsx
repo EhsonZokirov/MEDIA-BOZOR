@@ -141,6 +141,7 @@ function Blogers() {
 
           {/* azik */}
           <Cards img={azik} name="Азиз" inst="247k" youtube="0" tiktok="350k" />
+          
           {/* Bahora Ruzieva */}
           <Cards
             img={Bahora}
