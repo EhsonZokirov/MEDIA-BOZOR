@@ -15,13 +15,21 @@ import azik from "../img/azik.jpg";
 import nek from "../img/nek.jpg";
 import tara from "../img/tara.jpg";
 import Cards from "../Cards";
+import NazarievaJas from "../img/Nazarieva Jasmina.jpg";
+import Bahora from "../img/Ruzieva Bahora.jpg";
+import Mirvais from "../img/Mirvais.jpg";
+import { useTranslation } from "react-i18next";
 
 function Blogers() {
+  const { t } = useTranslation();
   return (
     <div>
       {/* blogger cards  */}
       <section className=" py-20 lg:container m-auto">
-        <h1 className="text-center font-bold text-4xl mb-10"> БЛОГЕРЫ </h1>
+        <h1 className="text-center font-bold text-4xl mb-10">
+          {" "}
+          {t("БЛОГЕРЫ")}{" "}
+        </h1>
         <div className="grid xs:grid-cols-2 lg:grid-cols-3 m-auto text-center font-medium md:w-[80%] px-5 gap-5">
           {/* FOZILOV */}
           <Cards
@@ -133,6 +141,30 @@ function Blogers() {
 
           {/* azik */}
           <Cards img={azik} name="Азиз" inst="247k" youtube="0" tiktok="350k" />
+          {/* Bahora Ruzieva */}
+          <Cards
+            img={Bahora}
+            name="Бахора"
+            inst="327k"
+            youtube="0"
+            tiktok="1.3m"
+          />
+          {/* Mirvais */}
+          <Cards
+            img={Mirvais}
+            name="Мирвайс"
+            inst="100k"
+            youtube="2k"
+            tiktok="19.8k"
+          />
+          {/* Nazarieva */}
+          <Cards
+            img={NazarievaJas}
+            name="Жасмина"
+            inst="5.2k"
+            youtube="0"
+            tiktok="5k"
+          />
         </div>
       </section>
       <div className="grid xs:grid-cols-2 lg:grid-cols-3 m-auto text-center font-medium md:w-[80%] px-5 gap-5"></div>

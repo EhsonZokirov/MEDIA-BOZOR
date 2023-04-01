@@ -62,7 +62,7 @@ function Contacts() {
               variant="contained"
               sx={{ bgcolor: "purple" }}
             >
-              Отправить
+              {t("Отправить")}
             </Button>
           </NavLink>
         </form>

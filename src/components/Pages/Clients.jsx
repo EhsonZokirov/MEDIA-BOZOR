@@ -6,7 +6,9 @@ import siyoma from "../img/siyoma.png";
 import tamosho from "../img/tamosho.jfif";
 import megafon from "../img/мегафон.png";
 import alif from "../img/alif_en.png";
+import { useTranslation } from "react-i18next";
 function Clients() {
+  const { t } = useTranslation();
   return (
     <div>
       {/* clients */}
@@ -17,7 +19,9 @@ function Clients() {
         data-aos-offset="0"
         className="container m-auto py-24"
       >
-        <h1 className="text-center pb-10 font-bold text-3xl">НАШИ КЛИЕНТЫ:</h1>
+        <h1 className="text-center pb-10 font-bold text-3xl">
+          {t("НАШИ КЛИЕНТЫ")}:
+        </h1>
         <sect className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 md:w-[50%] lg:w-[75%] m-auto">
           <div className="m-auto flex items-center">
             <img
