@@ -1,9 +1,8 @@
 {
   "Блогеры": "Bloggers",
   "Клиенты": "Clients",
-  "Партнеры": "Partners",
+  "Партнёры": "Partners",
   "Контакты": "Contacts",
-
   "Увлеченная команда видеоблогеров и профессионалов рекламы": "A passionate team of bloggers and advertising professionals",
   "Мы реализуем рекламные проекты у блогеров, создавая решения для достижения наилучшего результата. Наши проекты повышают лояльность к бренду и увеличивают продажи.": "We implement advertising projects with bloggers, creating solutions to achieve the best result. Our projects increase brand loyalty and increase sales.",
   "СОВЕТ": "TIP",
@@ -15,6 +14,5 @@
   "Сообщение": "Message",
   "Отправить": "Send",
   "НАШИ КЛИЕНТЫ": "Clients",
-  "БЛОГЕРЫ":"Bloggers"
-
+  "БЛОГЕРЫ": "Bloggers"
 }

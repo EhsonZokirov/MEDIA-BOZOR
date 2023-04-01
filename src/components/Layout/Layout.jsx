@@ -49,16 +49,16 @@ function Layout() {
       <div className="grid text-center items-start justify-evenly transition-all text-slate-400 bg-[#073648] h-[100vh] ">
         <div className="m-10 space-x-1 text-start ">
           <NavLink to="Blogers">
-            <ListItemText primary="Блогеры" />
+            <ListItemText primary={t("Блогеры")} />
           </NavLink>
           <NavLink to="Clients">
-            <ListItemText primary="Клиенты" />
+            <ListItemText primary={t("Клиенты")} />
           </NavLink>
           <NavLink to="Partners">
-            <ListItemText primary="Партнёры" />
+            <ListItemText primary={t("Партнёры")} />
           </NavLink>
           <NavLink to="Contacts">
-            <ListItemText primary="Контакты" />
+            <ListItemText primary={t("Контакты")} />
           </NavLink>
         </div>
       </div>
@@ -136,7 +136,7 @@ function Layout() {
               className="hover:text-white cursor-pointer transition text-center m-auto"
               to="Partners"
             >
-              {t("Партнеры")}
+              {t("Партнёры")}
             </NavLink>
             <NavLink
               className="hover:text-white cursor-pointer transition text-center m-auto"
