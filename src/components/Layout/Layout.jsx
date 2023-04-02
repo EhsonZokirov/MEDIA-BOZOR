@@ -41,12 +41,14 @@ function Layout() {
 
   const list = (anchor) => (
     <Box
-      sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
+      sx={{
+        width: anchor === "top" || anchor === "bottom" ? "auto" : 250,
+      }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <div className="grid text-center items-start justify-evenly transition-all text-slate-400 bg-[#073648] h-[100vh] ">
+      <div className="grid text-center items-start justify-evenly transition-all text-slate-400 bg-blue-900 backdrop-blur-sm h-[100vh] ">
         <div className="m-10 space-x-1 text-start ">
           <NavLink to="Blogers">
             <ListItemText primary={t("Блогеры")} />
@@ -147,7 +149,7 @@ function Layout() {
           </div>
           {/* bar */}
           {/* Drawer */}
-          <div className="md:hidden">
+          <div className="md:hidden ">
             {["left"].map((anchor) => (
               <React.Fragment key={anchor}>
                 <Button onClick={toggleDrawer(anchor, true)}>
