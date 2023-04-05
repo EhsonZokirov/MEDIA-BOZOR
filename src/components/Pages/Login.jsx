@@ -6,7 +6,7 @@ import React from "react";
 function Login() {
   const { t } = useTranslation();
   return (
-    <div className="h-[91vh] pt-32">
+    <div className="h-[91vh] pt-44 md:pt-32">
       <form
         requared
         data-aos="zoom-in"
