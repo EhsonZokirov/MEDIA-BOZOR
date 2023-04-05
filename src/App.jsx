@@ -9,6 +9,7 @@ import Contacts from "./components/Pages/Contacts";
 import NoMatch from "./components/Pages/NoMatch";
 import "./App.css";
 import UserById from "./components/Pages/UserById";
+import Login from "./components/Pages/Login";
 
 function App() {
   return (
@@ -16,13 +17,14 @@ function App() {
       {/* ROUTER */}
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index="/Home" element={<Home />} />
-          <Route path="/Home" element={<Home />} />
-          <Route path="/Blogers" element={<Blogers />} />
-          <Route path="/Clients" element={<Clients />} />
-          <Route path="/Partners" element={<Partners />} />
-          <Route path="/Contacts" element={<Contacts />} />
-          <Route path="/user/:id" element={<UserById />} />
+          <Route index element={<Home />} />
+          <Route path="Home" element={<Home />} />
+          <Route path="Blogers" element={<Blogers />} />
+          <Route path="Clients" element={<Clients />} />
+          <Route path="Partners" element={<Partners />} />
+          <Route path="Contacts" element={<Contacts />} />
+          <Route path="Login" element={<Login />} />
+          <Route path="user/:id" element={<UserById />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>

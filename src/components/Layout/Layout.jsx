@@ -14,7 +14,6 @@ import SpeedDialAction from "@mui/material/SpeedDialAction";
 import ru from "../img/russia.png";
 import en from "../img/England.png";
 import tj from "../img/tajikistan.png";
-
 import { useTranslation } from "react-i18next";
 function Layout() {
   const { t, i18n } = useTranslation();
@@ -48,7 +47,8 @@ function Layout() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <div className="grid text-center items-start justify-evenly transition-all text-slate-400 bg-blue-900 backdrop-blur-sm h-[100vh] ">
+      {/* DRAWER */}
+      <div className="grid text-center items-start justify-evenly transition-all text-slate-400 bg-blue-900 backdrop-blur-sm h-[48vh] ">
         <div className="m-10 space-x-1 text-start ">
           <NavLink to="Blogers">
             <ListItemText primary={t("Блогеры")} />
@@ -62,11 +62,17 @@ function Layout() {
           <NavLink to="Contacts">
             <ListItemText primary={t("Контакты")} />
           </NavLink>
+          <br />
+          <NavLink to="Login">
+            <Button variant="outlined" color="inherit" size="small" fullWidth>
+              {t("ВХОД")}
+            </Button>
+          </NavLink>
         </div>
       </div>
+      {/* DRAWER */}
     </Box>
   );
-
   return (
     <div>
       {/* LANGUAGE */}
@@ -146,11 +152,16 @@ function Layout() {
             >
               {t("Контакты")}
             </NavLink>
+            <NavLink to="Login">
+              <Button variant="contained" color="error">
+                {t("ВХОД")}
+              </Button>
+            </NavLink>
           </div>
           {/* bar */}
           {/* Drawer */}
           <div className="md:hidden ">
-            {["left"].map((anchor) => (
+            {["bottom"].map((anchor) => (
               <React.Fragment key={anchor}>
                 <Button onClick={toggleDrawer(anchor, true)}>
                   {<MenuIcon color="action" fontSize="large" />}
