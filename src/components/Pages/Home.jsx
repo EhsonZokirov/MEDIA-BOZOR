@@ -189,7 +189,7 @@ function Home() {
               tiktok="5k"
             />
 
-            <Link to="/user/3">
+            
               {/* ZANJABIL */}
               <Cards
                 img={ZANJABIL}
@@ -198,7 +198,7 @@ function Home() {
                 youtube="158k"
                 tiktok="150k"
               />
-            </Link>
+            
             {/* JONON */}
             <Cards
               img={Jonon}

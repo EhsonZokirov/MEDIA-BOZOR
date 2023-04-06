@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import fozilov from "../img/Fozilov.jpg";
 import Dilnaze from "../img/Dilnaze.jpg";
 import ZANJABIL from "../img/ZANJABIL.JPG";
@@ -19,12 +19,22 @@ import NazarievaJas from "../img/Nazarieva Jasmina.jpg";
 import Bahora from "../img/Ruzieva Bahora.jpg";
 import Mirvais from "../img/Mirvais.jpg";
 import { useTranslation } from "react-i18next";
+import { InputAdornment, MenuItem, Select, TextField } from "@mui/material";
+import SearchIcon from "@mui/icons-material/Search";
+import Box from "@mui/material/Box";
+import InputLabel from "@mui/material/InputLabel";
+import FormControl from "@mui/material/FormControl";
+import MaleIcon from "@mui/icons-material/Male";
+import FemaleIcon from "@mui/icons-material/Female";
+import WcIcon from "@mui/icons-material/Wc";
+import Groups2Icon from "@mui/icons-material/Groups2";
 
 function Blogers() {
   const { t } = useTranslation();
   let bloggers = [
     ///////////////////////////////////// FOZILOV
     {
+      id: 1,
       name: t("Илхом"),
       img: fozilov,
       inst: "216k",
@@ -35,6 +45,7 @@ function Blogers() {
     },
     ///////////////////////////////////// Dilnaze
     {
+      id: 2,
       name: t("Дилноза"),
       img: Dilnaze,
       inst: "11k",
@@ -44,6 +55,7 @@ function Blogers() {
     },
     ///////////////////////////////////// Zanjabil Bro
     {
+      id: 3,
       name: t("Занчабил Бро"),
       img: ZANJABIL,
       inst: "262k",
@@ -53,6 +65,7 @@ function Blogers() {
     },
     ///////////////////////////////////// Джонон
     {
+      id: 4,
       name: t("Джонон"),
       img: Jonon,
       inst: "265k",
@@ -62,6 +75,7 @@ function Blogers() {
     },
     ///////////////////////////////////// Aziz Rahima
     {
+      id: 5,
       name: t("Азиз & Рахима"),
       img: azizRahima,
       inst: "730k",
@@ -71,6 +85,7 @@ function Blogers() {
     },
     ///////////////////////////////////// Zarka
     {
+      id: 6,
       name: t("Зарина"),
       img: zarka,
       inst: "255k",
@@ -80,6 +95,7 @@ function Blogers() {
     },
     ///////////////////////////////////// Favik
     {
+      id: 7,
       name: t("Фаридун"),
       img: favik,
       inst: "315k",
@@ -89,6 +105,7 @@ function Blogers() {
     },
     ///////////////////////////////////// Малоҳат
     {
+      id: 8,
       name: t("Малохат"),
       img: selena,
       inst: "185k",
@@ -98,6 +115,7 @@ function Blogers() {
     },
     ///////////////////////////////////// Manucher 55
     {
+      id: 9,
       name: t("Манучер"),
       img: manucher55,
       inst: "27k",
@@ -107,6 +125,7 @@ function Blogers() {
     },
     ///////////////////////////////////// Nasiba 1178
     {
+      id: 10,
       name: t("Насиба"),
       img: nasiba,
       inst: "11.2k",
@@ -116,6 +135,7 @@ function Blogers() {
     },
     ///////////////////////////////////// РАФАЕЛ ГУЛОВ
     {
+      id: 11,
       name: t("Рафаел"),
       img: rafael,
       inst: "250k",
@@ -125,6 +145,7 @@ function Blogers() {
     },
     ///////////////////////////////////// Ёсаминбону
     {
+      id: 12,
       name: t("Ёсаминбону"),
       img: Yosamin,
       inst: "35.5k",
@@ -134,6 +155,7 @@ function Blogers() {
     },
     ///////////////////////////////////// Nek
     {
+      id: 13,
       name: t("Некру"),
       img: nek,
       inst: "800k",
@@ -143,6 +165,7 @@ function Blogers() {
     },
     ///////////////////////////////////// Тара
     {
+      id: 14,
       name: t("Тара"),
       img: tara,
       inst: "500k",
@@ -152,6 +175,7 @@ function Blogers() {
     },
     ///////////////////////////////////// AZIK vine
     {
+      id: 15,
       name: t("Азиз"),
       img: azik,
       inst: "247k",
@@ -161,6 +185,7 @@ function Blogers() {
     },
     ///////////////////////////////////// Баҳора
     {
+      id: 16,
       name: t("Бахора"),
       img: Bahora,
       inst: "327k",
@@ -170,6 +195,7 @@ function Blogers() {
     },
     ///////////////////////////////////// Мирвайс
     {
+      id: 17,
       name: t("Мирвайс"),
       img: Mirvais,
       inst: "100k",
@@ -179,6 +205,7 @@ function Blogers() {
     },
     ///////////////////////////////////// Jasmina
     {
+      id: 18,
       name: t("Ясмина"),
       img: NazarievaJas,
       inst: "5.2k",
@@ -188,6 +215,11 @@ function Blogers() {
     },
   ];
 
+  console.log(bloggers);
+  const [age, setAge] = useState("");
+  const handleChange = (event) => {
+    setAge(event.target.value);
+  };
   return (
     <div>
       {/* blogger cards  */}
@@ -196,6 +228,54 @@ function Blogers() {
           {" "}
           {t("БЛОГЕРЫ")}{" "}
         </h1>
+        <div className="flex items-center gap-5 justify-center">
+          <div className="flex justify-center py-10 items-center">
+            <TextField
+              variant="standard"
+              size="small"
+              color="error"
+              label={t("Поиск")}
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <SearchIcon />
+                  </InputAdornment>
+                ),
+              }}
+            />
+            {/* <IconButton color="inherit">{<SearchIcon />}</IconButton> */}
+          </div>
+          <Box sx={{ minWidth: 120 }}>
+            <FormControl fullWidth>
+              <InputLabel id="demo-simple-select-label">
+                {t("Фильтер")}
+              </InputLabel>
+              <Select
+                labelId="demo-simple-select-label"
+                id="demo-simple-select"
+                value={age}
+                label="Age"
+                size="small"
+                variant="standard"
+                onChange={handleChange}
+              >
+                <MenuItem value={0}>
+                  <Groups2Icon /> {t("ВСЕ БЛОГЕРЫ")}
+                </MenuItem>
+                <MenuItem value={10}>
+                  <MaleIcon color="primary" /> {t("Мужчины")}
+                </MenuItem>
+                <MenuItem value={20}>
+                  <FemaleIcon color="error" /> {t("Женщины")}
+                </MenuItem>
+                <MenuItem value={30}>
+                  <WcIcon color="success" /> {t("Семейные")}
+                </MenuItem>
+              </Select>
+            </FormControl>
+          </Box>
+        </div>
+
         <div className="grid xs:grid-cols-2 lg:grid-cols-3 m-auto text-center font-medium md:w-[75%] px-5 gap-5 transition-all">
           {bloggers.map((e) => {
             return (
