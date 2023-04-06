@@ -173,7 +173,7 @@ function Blogers() {
       name: t("Мирвайс"),
       img: Mirvais,
       inst: "100k",
-      youtube: "3",
+      youtube: "3k",
       tiktok: "20k",
       gender: "male",
     },
@@ -196,7 +196,7 @@ function Blogers() {
           {" "}
           {t("БЛОГЕРЫ")}{" "}
         </h1>
-        <div className="grid xs:grid-cols-2 lg:grid-cols-3 m-auto text-center font-medium md:w-[80%] px-5 gap-5">
+        <div className="grid xs:grid-cols-2 lg:grid-cols-3 m-auto text-center font-medium md:w-[75%] px-5 gap-5 transition-all">
           {bloggers.map((e) => {
             return (
               <Cards
