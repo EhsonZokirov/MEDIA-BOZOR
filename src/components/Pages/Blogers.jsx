@@ -22,6 +22,173 @@ import { useTranslation } from "react-i18next";
 
 function Blogers() {
   const { t } = useTranslation();
+  
+  let bloggers = [
+    {
+      ///////////////////////////////////// FOZILOV
+      name: t("Илхом"),
+      img: fozilov,
+      inst: "216k",
+      youtube: "10k",
+      tiktok: "50k",
+      gender: "male",
+      instaNik: "fozilov",
+    },
+    {
+      ///////////////////////////////////// Dilnaze
+      name: t("Дилноза"),
+      img: Dilnaze,
+      inst: "11k",
+      youtube: "0k",
+      tiktok: "5k",
+      gender: "female",
+    },
+    {
+      ///////////////////////////////////// Zanjabil Bro
+      name: t("Занчабил Бро"),
+      img: ZANJABIL,
+      inst: "262k",
+      youtube: "160k",
+      tiktok: "150k",
+      gender: "male",
+    },
+    {
+      ///////////////////////////////////// Джонон
+      name: t("Джонон"),
+      img: Jonon,
+      inst: "265k",
+      youtube: "57k",
+      tiktok: "70k",
+      gender: "female",
+    },
+    {
+      ///////////////////////////////////// Aziz Rahima
+      name: t("Азиз & Рахима"),
+      img: azizRahima,
+      inst: "730k",
+      youtube: "20k",
+      tiktok: "450k",
+      gender: "Famaly",
+    },
+    {
+      ///////////////////////////////////// Zarka
+      name: t("Зарина"),
+      img: zarka,
+      inst: "255k",
+      youtube: "0k",
+      tiktok: "150k",
+      gender: "female",
+    },
+    {
+      ///////////////////////////////////// Favik
+      name: t("Фаридун"),
+      img: favik,
+      inst: "315k",
+      youtube: "0k",
+      tiktok: "150k",
+      gender: "male",
+    },
+    {
+      ///////////////////////////////////// Малоҳат
+      name: t("Малохат"),
+      img: selena,
+      inst: "185k",
+      youtube: "0k",
+      tiktok: "22k",
+      gender: "female",
+    },
+    {
+      ///////////////////////////////////// Manucher 55
+      name: t("Манучер"),
+      img: manucher55,
+      inst: "27k",
+      youtube: "6k",
+      tiktok: "14k",
+      gender: "male",
+    },
+    {
+      ///////////////////////////////////// Nasiba 1178
+      name: t("Насиба"),
+      img: nasiba,
+      inst: "11.2k",
+      youtube: "0k",
+      tiktok: "5k",
+      gender: "female",
+    },
+    {
+      ///////////////////////////////////// РАФАЕЛ ГУЛОВ
+      name: t("Рафаел"),
+      img: rafael,
+      inst: "250k",
+      youtube: "113k",
+      tiktok: "150k",
+      gender: "male",
+    },
+    {
+      ///////////////////////////////////// Ёсаминбону
+      name: t("Ёсаминбону"),
+      img: Yosamin,
+      inst: "35.5k",
+      youtube: "0",
+      tiktok: "0",
+      gender: "female",
+    },
+    {
+      ///////////////////////////////////// Nek
+      name: t("Некру"),
+      img: nek,
+      inst: "800k",
+      youtube: "60k",
+      tiktok: "620k",
+      gender: "male",
+    },
+    {
+      ///////////////////////////////////// Тара
+      name: t("Тара"),
+      img: tara,
+      inst: "500k",
+      youtube: "0",
+      tiktok: "200k",
+      gender: "female",
+    },
+    {
+      ///////////////////////////////////// AZIK vine
+      name: t("Азиз"),
+      img: azik,
+      inst: "247k",
+      youtube: "0",
+      tiktok: "350k",
+      gender: "male",
+    },
+    {
+      ///////////////////////////////////// Баҳора
+      name: t("Бахора"),
+      img: Bahora,
+      inst: "327k",
+      youtube: "0",
+      tiktok: "1,3m",
+      gender: "female",
+    },
+    {
+      ///////////////////////////////////// Мирвайс
+      name: t("Мирвайс"),
+      img: Mirvais,
+      inst: "100k",
+      youtube: "3",
+      tiktok: "20k",
+      gender: "male",
+    },
+    {
+      ///////////////////////////////////// Jasmina
+      name: t("Ясмина"),
+      img: NazarievaJas,
+      inst: "5.2k",
+      youtube: "0",
+      tiktok: "5k",
+      gender: "female",
+    },
+  ];
+  
   return (
     <div>
       {/* blogger cards  */}
@@ -31,146 +198,22 @@ function Blogers() {
           {t("БЛОГЕРЫ")}{" "}
         </h1>
         <div className="grid xs:grid-cols-2 lg:grid-cols-3 m-auto text-center font-medium md:w-[80%] px-5 gap-5">
-          {/* FOZILOV */}
-          <Cards
-            img={fozilov}
-            name="Илхом"
-            inst="216k"
-            youtube="9.58k"
-            tiktok="50k"
-          />
-          {/* Dilnaze */}
-          <Cards
-            img={Dilnaze}
-            name="Дилноза"
-            inst="11k"
-            youtube="0"
-            tiktok="5k"
-          />
-          {/* ZANJABIL */}
-          <Cards
-            img={ZANJABIL}
-            name="Матеош"
-            inst="262k"
-            youtube="158k"
-            tiktok="150k"
-          />
-          {/* JONON */}
-          <Cards
-            img={Jonon}
-            name="Ҷонон"
-            inst="260k"
-            youtube="57k"
-            tiktok="70k"
-          />
-          {/* AZIZ & RAHIMA */}
-          <Cards
-            img={azizRahima}
-            name="Азиз ва Раҳима"
-            inst="729k"
-            youtube="17k"
-            tiktok="450k"
-          />
-          {/* ZARKA */}
-          <Cards
-            img={zarka}
-            name="Зарина"
-            inst="255k"
-            youtube="0"
-            tiktok="150k"
-          />
-          {/* Фаридун */}
-          <Cards
-            img={favik}
-            name="Фаридун"
-            inst="313k"
-            youtube="0"
-            tiktok="150k"
-          />
-          {/* Малохат */}
-          <Cards
-            img={selena}
-            name="Малоҳат"
-            inst="185k"
-            youtube="0"
-            tiktok="22k"
-          />
-          {/* Манучехр */}
-          <Cards
-            img={manucher55}
-            name="Манучеҳр"
-            inst="26.4k"
-            youtube="6k"
-            tiktok="14k"
-          />
-          {/* Насиба */}
-          <Cards
-            img={nasiba}
-            name="Насиба"
-            inst="11.1k"
-            youtube="0"
-            tiktok="5k"
-          />
-          {/* Рафаэль */}
-          <Cards
-            img={rafael}
-            name="Рафаел"
-            inst="249k"
-            youtube="113k"
-            tiktok="150k"
-          />
-          {/* Ёсамин */}
-          <Cards
-            img={Yosamin}
-            name="Ёсаминбону"
-            inst="35,5k"
-            youtube="0"
-            tiktok="0"
-          />
-
-          {/* Некру */}
-          <Cards
-            img={nek}
-            name="Некру"
-            inst="703k"
-            youtube="58.8k"
-            tiktok="619.2k"
-          />
-          {/* Муатара */}
-          <Cards img={tara} name="Тара" inst="430k" youtube="0" tiktok="200k" />
-
-          {/* azik */}
-          <Cards img={azik} name="Азиз" inst="247k" youtube="0" tiktok="350k" />
-          
-          {/* Bahora Ruzieva */}
-          <Cards
-            img={Bahora}
-            name="Бахора"
-            inst="327k"
-            youtube="0"
-            tiktok="1.3m"
-          />
-          {/* Mirvais */}
-          <Cards
-            img={Mirvais}
-            name="Мирвайс"
-            inst="100k"
-            youtube="2k"
-            tiktok="19.8k"
-          />
-          {/* Nazarieva */}
-          <Cards
-            img={NazarievaJas}
-            name="Жасмина"
-            inst="5.2k"
-            youtube="0"
-            tiktok="5k"
-          />
+          {bloggers.map((e) => {
+            return (
+              <Cards
+                key={e.id}
+                name={e.name}
+                img={e.img}
+                inst={e.inst}
+                youtube={e.youtube}
+                tiktok={e.tiktok}
+              />
+            );
+          })}
         </div>
       </section>
       <div className="grid xs:grid-cols-2 lg:grid-cols-3 m-auto text-center font-medium md:w-[80%] px-5 gap-5"></div>
     </div>
   );
 }
-
 export default Blogers;

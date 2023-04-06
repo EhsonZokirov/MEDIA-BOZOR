@@ -2,6 +2,7 @@ import React from "react";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import LibraryMusicIcon from "@mui/icons-material/LibraryMusic";
+import { Tooltip } from "@mui/material";
 
 function Cards(props) {
   return (
@@ -13,16 +14,16 @@ function Cards(props) {
           src={props.img}
           alt="IMG"
         />
-        <div className="p-2 flex  justify-evenly">
-          <div>
+        <div className="p-2 flex justify-evenly">
+          <div className="cursor-no-drop" title="INSTAGRAM">
             <InstagramIcon />
             <span className="hidden md:block"> {props.inst}</span>
           </div>
-          <div>
+          <div className="cursor-no-drop" title="YOUTUBE">
             <YouTubeIcon />
             <span className="hidden md:block"> {props.youtube}</span>
           </div>
-          <div>
+          <div className="cursor-no-drop" title="Tik Tok">
             <LibraryMusicIcon />
             <span className="hidden md:block"> {props.tiktok}</span>
           </div>
