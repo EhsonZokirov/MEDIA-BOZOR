@@ -22,10 +22,9 @@ import { useTranslation } from "react-i18next";
 
 function Blogers() {
   const { t } = useTranslation();
-  
   let bloggers = [
+    ///////////////////////////////////// FOZILOV
     {
-      ///////////////////////////////////// FOZILOV
       name: t("Илхом"),
       img: fozilov,
       inst: "216k",
@@ -34,8 +33,8 @@ function Blogers() {
       gender: "male",
       instaNik: "fozilov",
     },
+    ///////////////////////////////////// Dilnaze
     {
-      ///////////////////////////////////// Dilnaze
       name: t("Дилноза"),
       img: Dilnaze,
       inst: "11k",
@@ -43,8 +42,8 @@ function Blogers() {
       tiktok: "5k",
       gender: "female",
     },
+    ///////////////////////////////////// Zanjabil Bro
     {
-      ///////////////////////////////////// Zanjabil Bro
       name: t("Занчабил Бро"),
       img: ZANJABIL,
       inst: "262k",
@@ -52,8 +51,8 @@ function Blogers() {
       tiktok: "150k",
       gender: "male",
     },
+    ///////////////////////////////////// Джонон
     {
-      ///////////////////////////////////// Джонон
       name: t("Джонон"),
       img: Jonon,
       inst: "265k",
@@ -61,8 +60,8 @@ function Blogers() {
       tiktok: "70k",
       gender: "female",
     },
+    ///////////////////////////////////// Aziz Rahima
     {
-      ///////////////////////////////////// Aziz Rahima
       name: t("Азиз & Рахима"),
       img: azizRahima,
       inst: "730k",
@@ -70,8 +69,8 @@ function Blogers() {
       tiktok: "450k",
       gender: "Famaly",
     },
+    ///////////////////////////////////// Zarka
     {
-      ///////////////////////////////////// Zarka
       name: t("Зарина"),
       img: zarka,
       inst: "255k",
@@ -79,8 +78,8 @@ function Blogers() {
       tiktok: "150k",
       gender: "female",
     },
+    ///////////////////////////////////// Favik
     {
-      ///////////////////////////////////// Favik
       name: t("Фаридун"),
       img: favik,
       inst: "315k",
@@ -88,8 +87,8 @@ function Blogers() {
       tiktok: "150k",
       gender: "male",
     },
+    ///////////////////////////////////// Малоҳат
     {
-      ///////////////////////////////////// Малоҳат
       name: t("Малохат"),
       img: selena,
       inst: "185k",
@@ -97,8 +96,8 @@ function Blogers() {
       tiktok: "22k",
       gender: "female",
     },
+    ///////////////////////////////////// Manucher 55
     {
-      ///////////////////////////////////// Manucher 55
       name: t("Манучер"),
       img: manucher55,
       inst: "27k",
@@ -106,8 +105,8 @@ function Blogers() {
       tiktok: "14k",
       gender: "male",
     },
+    ///////////////////////////////////// Nasiba 1178
     {
-      ///////////////////////////////////// Nasiba 1178
       name: t("Насиба"),
       img: nasiba,
       inst: "11.2k",
@@ -115,8 +114,8 @@ function Blogers() {
       tiktok: "5k",
       gender: "female",
     },
+    ///////////////////////////////////// РАФАЕЛ ГУЛОВ
     {
-      ///////////////////////////////////// РАФАЕЛ ГУЛОВ
       name: t("Рафаел"),
       img: rafael,
       inst: "250k",
@@ -124,8 +123,8 @@ function Blogers() {
       tiktok: "150k",
       gender: "male",
     },
+    ///////////////////////////////////// Ёсаминбону
     {
-      ///////////////////////////////////// Ёсаминбону
       name: t("Ёсаминбону"),
       img: Yosamin,
       inst: "35.5k",
@@ -133,8 +132,8 @@ function Blogers() {
       tiktok: "0",
       gender: "female",
     },
+    ///////////////////////////////////// Nek
     {
-      ///////////////////////////////////// Nek
       name: t("Некру"),
       img: nek,
       inst: "800k",
@@ -142,8 +141,8 @@ function Blogers() {
       tiktok: "620k",
       gender: "male",
     },
+    ///////////////////////////////////// Тара
     {
-      ///////////////////////////////////// Тара
       name: t("Тара"),
       img: tara,
       inst: "500k",
@@ -151,8 +150,8 @@ function Blogers() {
       tiktok: "200k",
       gender: "female",
     },
+    ///////////////////////////////////// AZIK vine
     {
-      ///////////////////////////////////// AZIK vine
       name: t("Азиз"),
       img: azik,
       inst: "247k",
@@ -160,8 +159,8 @@ function Blogers() {
       tiktok: "350k",
       gender: "male",
     },
+    ///////////////////////////////////// Баҳора
     {
-      ///////////////////////////////////// Баҳора
       name: t("Бахора"),
       img: Bahora,
       inst: "327k",
@@ -169,8 +168,8 @@ function Blogers() {
       tiktok: "1,3m",
       gender: "female",
     },
+    ///////////////////////////////////// Мирвайс
     {
-      ///////////////////////////////////// Мирвайс
       name: t("Мирвайс"),
       img: Mirvais,
       inst: "100k",
@@ -178,8 +177,8 @@ function Blogers() {
       tiktok: "20k",
       gender: "male",
     },
+    ///////////////////////////////////// Jasmina
     {
-      ///////////////////////////////////// Jasmina
       name: t("Ясмина"),
       img: NazarievaJas,
       inst: "5.2k",
@@ -188,7 +187,7 @@ function Blogers() {
       gender: "female",
     },
   ];
-  
+
   return (
     <div>
       {/* blogger cards  */}
