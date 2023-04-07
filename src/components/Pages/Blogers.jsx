@@ -82,7 +82,7 @@ function Blogers() {
       inst: "730k",
       youtube: "20k",
       tiktok: "450k",
-      gender: "Famaly",
+      gender: "family",
     },
     ///////////////////////////////////// Zarka
     {
@@ -216,10 +216,30 @@ function Blogers() {
     },
   ];
   // FILTER state
+  const [card, setCard] = useState([]);
   const [age, setAge] = useState("");
   const handleChange = (event) => {
     setAge(event.target.value);
   };
+  console.log(card);
+  const [filtered, setFiltered] = useState(bloggers);
+  function todoFilter(gender) {
+    if (gender === "all") {
+      setFiltered(bloggers);
+    } else {
+      let newCard = [...bloggers].filter((item) => item.gender === gender);
+      setFiltered(newCard);
+    }
+  }
+  function statusTodo(id) {
+    let newCard = [...bloggers].filter((item) => {
+      if (item.id === id) {
+        item.gender = !item.gender;
+      }
+      return item;
+    });
+    setCard(newCard);
+  }
   // search input state
   const [search, setSearch] = useState("");
   return (
@@ -230,8 +250,8 @@ function Blogers() {
           {" "}
           {t("БЛОГЕРЫ")}{" "}
         </h1>
+        {/* SEARCH DIV */}
         <div className="flex items-center gap-5 justify-center">
-          {/* SEARCH DIV */}
           <div className="flex justify-center py-10 items-center">
             <TextField
               onChange={(event) => {
@@ -264,16 +284,16 @@ function Blogers() {
                 variant="standard"
                 onChange={handleChange}
               >
-                <MenuItem value={0}>
+                <MenuItem onClick={() => todoFilter("all")} value={0}>
                   <Groups2Icon /> {t("ВСЕ БЛОГЕРЫ")}
                 </MenuItem>
-                <MenuItem value={10}>
+                <MenuItem onClick={() => todoFilter("male")} value={10}>
                   <MaleIcon color="primary" /> {t("Мужчины")}
                 </MenuItem>
-                <MenuItem value={20}>
+                <MenuItem onClick={() => todoFilter("female")} value={20}>
                   <FemaleIcon color="error" /> {t("Женщины")}
                 </MenuItem>
-                <MenuItem value={30}>
+                <MenuItem onClick={() => todoFilter("family")} value={30}>
                   <WcIcon color="success" /> {t("Семейные")}
                 </MenuItem>
               </Select>
@@ -281,7 +301,7 @@ function Blogers() {
           </Box>
         </div>
         <div className="grid xs:grid-cols-2 lg:grid-cols-3 m-auto text-center font-medium md:w-[75%] px-5 gap-5 transition-all">
-          {bloggers
+          {filtered
             .filter((val) => {
               if (search === "") {
                 return val;
@@ -295,6 +315,7 @@ function Blogers() {
             .map((e) => {
               return (
                 <Cards
+                  onClick={() => statusTodo(e.id)}
                   key={e.id}
                   name={e.name}
                   img={e.img}
