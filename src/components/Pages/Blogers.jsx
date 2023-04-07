@@ -41,7 +41,6 @@ function Blogers() {
       youtube: "10k",
       tiktok: "50k",
       gender: "male",
-      instaNik: "fozilov",
     },
     ///////////////////////////////////// Dilnaze
     {
@@ -214,12 +213,12 @@ function Blogers() {
       gender: "female",
     },
   ];
-
-  console.log(bloggers);
   const [age, setAge] = useState("");
   const handleChange = (event) => {
     setAge(event.target.value);
   };
+  // search
+  const [search, setSearch] = useState("");
   return (
     <div>
       {/* blogger cards  */}
@@ -229,8 +228,12 @@ function Blogers() {
           {t("БЛОГЕРЫ")}{" "}
         </h1>
         <div className="flex items-center gap-5 justify-center">
+          {/* SEARCH DIV */}
           <div className="flex justify-center py-10 items-center">
             <TextField
+              onChange={(event) => {
+                setSearch(event.target.value);
+              }}
               variant="standard"
               size="small"
               color="error"
@@ -243,7 +246,6 @@ function Blogers() {
                 ),
               }}
             />
-            {/* <IconButton color="inherit">{<SearchIcon />}</IconButton> */}
           </div>
           <Box sx={{ minWidth: 120 }}>
             <FormControl fullWidth>
@@ -275,23 +277,32 @@ function Blogers() {
             </FormControl>
           </Box>
         </div>
-
         <div className="grid xs:grid-cols-2 lg:grid-cols-3 m-auto text-center font-medium md:w-[75%] px-5 gap-5 transition-all">
-          {bloggers.map((e) => {
-            return (
-              <Cards
-                key={e.id}
-                name={e.name}
-                img={e.img}
-                inst={e.inst}
-                youtube={e.youtube}
-                tiktok={e.tiktok}
-              />
-            );
-          })}
+          {bloggers
+            .filter((val) => {
+              if (search === "") {
+                return val;
+              } else if (
+                val.name.toLowerCase().includes(search.toLowerCase())
+              ) {
+                return val;
+              }
+              return 0;
+            })
+            .map((e) => {
+              return (
+                <Cards
+                  key={e.id}
+                  name={e.name}
+                  img={e.img}
+                  inst={e.inst}
+                  youtube={e.youtube}
+                  tiktok={e.tiktok}
+                />
+              );
+            })}
         </div>
       </section>
-      <div className="grid xs:grid-cols-2 lg:grid-cols-3 m-auto text-center font-medium md:w-[80%] px-5 gap-5"></div>
     </div>
   );
 }
