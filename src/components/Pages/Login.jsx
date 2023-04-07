@@ -15,7 +15,12 @@ function Login() {
         <h1 className="text-center text-[30px] py-5 font-mono">{t("ВХОД")}</h1>
         <div className="grid gap-2 sm:px-5">
           <TextField required variant="standard" label={t("Логин")} />
-          <TextField required variant="standard" label={t("Пароль")} type="password" />
+          <TextField
+            required
+            variant="standard"
+            label={t("Пароль")}
+            type="password"
+          />
         </div>
         <div className="flex flex-wrap gap-5 m-auto text-center justify-around sm:justify-between sm:px-5 py-5 items-center">
           <label className="flex cursor-pointer gap-1">
@@ -27,10 +32,7 @@ function Login() {
           </p>
         </div>
         <div className="w-[90%] py-5 m-auto  ">
-          <button
-            type="submit"
-            className="flex rounded-[5px] m-auto justify-center w-[100%] py-2 bg-red-500  hover:bg-indigo-500 hover:text-white transition-all "
-          >
+          <button className="flex rounded-[5px] m-auto justify-center w-[100%] py-2 hover:bg-red-500  bg-indigo-500 text-white transition-all ">
             {t("Войти")}
           </button>
         </div>

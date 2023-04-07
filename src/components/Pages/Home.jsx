@@ -52,7 +52,8 @@ function Home() {
                 data-aos-easing="ease in"
                 data-aos-duration="500"
               >
-                <span className="text-indigo-500"> {t("MEDIA")}</span> <br /> {t("BOZOR")}
+                <span className="text-indigo-500"> {t("MEDIA")}</span> <br />{" "}
+                {t("BOZOR")}
               </p>
             </div>
           </div>
@@ -189,20 +190,19 @@ function Home() {
               tiktok="5k"
             />
 
-            
-              {/* ZANJABIL */}
-              <Cards
-                img={ZANJABIL}
-                name="ZanjabilBro"
-                inst="262k"
-                youtube="158k"
-                tiktok="150k"
-              />
-            
+            {/* ZANJABIL */}
+            <Cards
+              img={ZANJABIL}
+              name="Матеош"
+              inst="262k"
+              youtube="158k"
+              tiktok="150k"
+            />
+
             {/* JONON */}
             <Cards
               img={Jonon}
-              name="Ҷонон"
+              name="Джонон"
               inst="260k"
               youtube="57k"
               tiktok="70k"
@@ -210,7 +210,7 @@ function Home() {
             {/* AZIZ & RAHIMA */}
             <Cards
               img={azizRahima}
-              name="Азиз ва Раҳима"
+              name="Азиз и Рахима"
               inst="729k"
               youtube="17k"
               tiktok="450k"

@@ -1,8 +1,11 @@
 import { Button } from "@mui/material";
+
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import error from "../img/4o4.png";
 function NoMatch() {
+  const { t } = useTranslation();
   return (
     <div className="py-40 md:p-10">
       <div сlassName="">
@@ -19,7 +22,7 @@ function NoMatch() {
         >
           <Link to="Home">
             <Button variant="contained" color="error">
-              Домой
+              {t("Домой")}
             </Button>
           </Link>
         </div>

@@ -24,5 +24,11 @@
   "Забыли пароль": "Forget Password",
   "У вас нету аккаунта": "Don't have an account",
   "Зарегистрироваться": "Register",
-  "Войти": "Login"
+  "Войти": "Login",
+  "Фильтер": "Filter",
+  "Мужчины": "Male",
+  "Женщины": "Female",
+  "Семейные": "Family",
+  "Домой": "Main Page",
+  "Поиск": "Search"
 }
