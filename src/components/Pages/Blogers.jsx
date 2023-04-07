@@ -31,6 +31,7 @@ import Groups2Icon from "@mui/icons-material/Groups2";
 
 function Blogers() {
   const { t } = useTranslation();
+  // array of objects
   let bloggers = [
     ///////////////////////////////////// FOZILOV
     {
@@ -214,11 +215,12 @@ function Blogers() {
       gender: "female",
     },
   ];
+  // FILTER state
   const [age, setAge] = useState("");
   const handleChange = (event) => {
     setAge(event.target.value);
   };
-  // search
+  // search input state
   const [search, setSearch] = useState("");
   return (
     <div>
