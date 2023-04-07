@@ -35,17 +35,18 @@ function Blogers() {
     ///////////////////////////////////// FOZILOV
     {
       id: 1,
-      name: t("Илхом"),
+      name: "Foz1lov",
       img: fozilov,
       inst: "216k",
       youtube: "10k",
-      tiktok: "50k",
+      tiktok: "291k",
       gender: "male",
+      instanik: "foz1lov",
     },
     ///////////////////////////////////// Dilnaze
     {
       id: 2,
-      name: t("Дилноза"),
+      name: "Dilnazei",
       img: Dilnaze,
       inst: "11k",
       youtube: "0k",
@@ -55,27 +56,27 @@ function Blogers() {
     ///////////////////////////////////// Zanjabil Bro
     {
       id: 3,
-      name: t("Занчабил Бро"),
+      name: "ZanjabilBro",
       img: ZANJABIL,
       inst: "262k",
       youtube: "160k",
-      tiktok: "150k",
+      tiktok: "95.8k",
       gender: "male",
     },
     ///////////////////////////////////// Джонон
     {
       id: 4,
-      name: t("Джонон"),
+      name: "Jononisher",
       img: Jonon,
       inst: "265k",
       youtube: "57k",
-      tiktok: "70k",
+      tiktok: "138.4k",
       gender: "female",
     },
     ///////////////////////////////////// Aziz Rahima
     {
       id: 5,
-      name: t("Азиз & Рахима"),
+      name: "Aziz.Rahima",
       img: azizRahima,
       inst: "730k",
       youtube: "20k",
@@ -85,37 +86,37 @@ function Blogers() {
     ///////////////////////////////////// Zarka
     {
       id: 6,
-      name: t("Зарина"),
+      name: "_Zarkaa_",
       img: zarka,
       inst: "255k",
       youtube: "0k",
-      tiktok: "150k",
+      tiktok: "53.4k",
       gender: "female",
     },
     ///////////////////////////////////// Favik
     {
       id: 7,
-      name: t("Фаридун"),
+      name: "m_favik.tj",
       img: favik,
       inst: "315k",
       youtube: "0k",
-      tiktok: "150k",
+      tiktok: "165k",
       gender: "male",
     },
     ///////////////////////////////////// Малоҳат
     {
       id: 8,
-      name: t("Малохат"),
+      name: "Mallydav",
       img: selena,
       inst: "185k",
       youtube: "0k",
-      tiktok: "22k",
+      tiktok: "7k",
       gender: "female",
     },
     ///////////////////////////////////// Manucher 55
     {
       id: 9,
-      name: t("Манучер"),
+      name: "Manucher.55",
       img: manucher55,
       inst: "27k",
       youtube: "6k",
@@ -125,7 +126,7 @@ function Blogers() {
     ///////////////////////////////////// Nasiba 1178
     {
       id: 10,
-      name: t("Насиба"),
+      name: "Nasiba1178",
       img: nasiba,
       inst: "11.2k",
       youtube: "0k",
@@ -135,17 +136,17 @@ function Blogers() {
     ///////////////////////////////////// РАФАЕЛ ГУЛОВ
     {
       id: 11,
-      name: t("Рафаел"),
+      name: "RafaelGulov",
       img: rafael,
       inst: "250k",
       youtube: "113k",
-      tiktok: "150k",
+      tiktok: "2.5k",
       gender: "male",
     },
     ///////////////////////////////////// Ёсаминбону
     {
       id: 12,
-      name: t("Ёсаминбону"),
+      name: "Yosamin_Musoeva",
       img: Yosamin,
       inst: "35.5k",
       youtube: "0",
@@ -155,7 +156,7 @@ function Blogers() {
     ///////////////////////////////////// Nek
     {
       id: 13,
-      name: t("Некру"),
+      name: "Nek.xxl",
       img: nek,
       inst: "800k",
       youtube: "60k",
@@ -165,7 +166,7 @@ function Blogers() {
     ///////////////////////////////////// Тара
     {
       id: 14,
-      name: t("Тара"),
+      name: "TaraDinova",
       img: tara,
       inst: "500k",
       youtube: "0",
@@ -175,7 +176,7 @@ function Blogers() {
     ///////////////////////////////////// AZIK vine
     {
       id: 15,
-      name: t("Азиз"),
+      name: "Azikvine",
       img: azik,
       inst: "247k",
       youtube: "0",
@@ -185,9 +186,9 @@ function Blogers() {
     ///////////////////////////////////// Баҳора
     {
       id: 16,
-      name: t("Бахора"),
+      name: "Ruzieva.1",
       img: Bahora,
-      inst: "327k",
+      inst: "332k",
       youtube: "0",
       tiktok: "1,3m",
       gender: "female",
@@ -195,9 +196,9 @@ function Blogers() {
     ///////////////////////////////////// Мирвайс
     {
       id: 17,
-      name: t("Мирвайс"),
+      name: "exlaise_mv",
       img: Mirvais,
-      inst: "100k",
+      inst: "105k",
       youtube: "3k",
       tiktok: "20k",
       gender: "male",
@@ -205,7 +206,7 @@ function Blogers() {
     ///////////////////////////////////// Jasmina
     {
       id: 18,
-      name: t("Ясмина"),
+      name: "Nazar1eva",
       img: NazarievaJas,
       inst: "5.2k",
       youtube: "0",
