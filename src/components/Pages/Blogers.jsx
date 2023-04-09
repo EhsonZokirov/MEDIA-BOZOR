@@ -18,6 +18,7 @@ import Cards from "../Cards";
 import NazarievaJas from "../img/Nazarieva Jasmina.jpg";
 import Bahora from "../img/Ruzieva Bahora.jpg";
 import Mirvais from "../img/Mirvais.jpg";
+import jseng from "../img/Jseng.jpg";
 import { useTranslation } from "react-i18next";
 import { InputAdornment, MenuItem, Select, TextField } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
@@ -82,6 +83,16 @@ function Blogers() {
       inst: "730k",
       youtube: "20k",
       tiktok: "450k",
+      gender: "family",
+    },
+    ///////////////////////////////////// Aziz Rahima
+    {
+      id: 50,
+      name: "_jseng",
+      img: jseng,
+      inst: "67k",
+      youtube: "0",
+      tiktok: "50k",
       gender: "family",
     },
     ///////////////////////////////////// Zarka
