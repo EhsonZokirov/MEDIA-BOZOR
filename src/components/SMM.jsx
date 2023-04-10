@@ -18,53 +18,53 @@ function SMM() {
           </h1>
         </div>
         <div className="grid grid-cols-3 gap-5 w-[80%] m-auto">
-          <div className="w-[65%] bg-[#ffffff2f] m-auto border border-slate-900 rounded-xl">
+          <div className="w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto border border-slate-900 rounded-xl">
             <img className="rounded-t-xl" src={Abdullo} alt="Adbullo" />
             <div className="text-center p-3">
               <h1 className=" font-semibold text-lg">Adbullo</h1>
-              <p>dar orzui gashnich va padar</p>
+              <p>dar orzui gashnich va ukrob</p>
             </div>
           </div>
-          <div className="w-[65%] bg-[#ffffff2f] m-auto border border-slate-900 rounded-xl">
+          <div className="w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto border border-slate-900 rounded-xl">
             <img className="rounded-t-xl" src={Marsu} alt="Adbullo" />
             <div className="text-center p-3">
               <h1 className=" font-semibold text-lg">Marsu</h1>
-              <p>dar orzui gashnich va padar</p>
+              <p>dar orzui gashnich va ukrob</p>
             </div>
           </div>
-          <div className="w-[65%] bg-[#ffffff2f] m-auto border border-slate-900 rounded-xl">
+          <div className="w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto border border-slate-900 rounded-xl">
             <img className="rounded-t-xl" src={Abunasr} alt="Adbullo" />
             <div className="text-center p-3">
               <h1 className=" font-semibold text-lg">Abunasr</h1>
-              <p>dar orzui gashnich va padar</p>
+              <p>dar orzui gashnich va ukrob</p>
             </div>
           </div>
-          <div className="w-[65%] bg-[#ffffff2f] m-auto border border-slate-900 rounded-xl">
+          <div className="w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto border border-slate-900 rounded-xl">
             <img className="rounded-t-xl" src={Nasiba} alt="Adbullo" />
             <div className="text-center p-3">
               <h1 className=" font-semibold text-lg">Nasiba</h1>
-              <p>dar orzui gashnich va padar</p>
+              <p>dar orzui gashnich va ukrob</p>
             </div>
           </div>
-          <div className="w-[65%] bg-[#ffffff2f] m-auto border border-slate-900 rounded-xl">
+          <div className="w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto border border-slate-900 rounded-xl">
             <img className="rounded-t-xl" src={Parvina} alt="Adbullo" />
             <div className="text-center p-3">
               <h1 className=" font-semibold text-lg">Parvina</h1>
-              <p>dar orzui gashnich va padar</p>
+              <p>dar orzui gashnich va ukrob</p>
             </div>
           </div>
-          <div className="w-[65%] bg-[#ffffff2f] m-auto border border-slate-900 rounded-xl">
+          <div className="w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto border border-slate-900 rounded-xl">
             <img className="rounded-t-xl" src={Mavzuna} alt="Adbullo" />
             <div className="text-center p-3">
               <h1 className=" font-semibold text-lg">Abunasr</h1>
-              <p>dar orzui gashnich va padar</p>
+              <p>dar orzui gashnich va ukrob</p>
             </div>
           </div>
-          <div className="w-[65%] bg-[#ffffff2f] m-auto border border-slate-900 rounded-xl">
+          <div className="w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto border border-slate-900 rounded-xl">
             <img className="rounded-t-xl" src={Umeda} alt="Adbullo" />
             <div className="text-center p-3">
               <h1 className=" font-semibold text-lg">Umeda</h1>
-              <p>dar orzui gashnich va padar</p>
+              <p>dar orzui gashnich va ukrob</p>
             </div>
           </div>
         </div>
