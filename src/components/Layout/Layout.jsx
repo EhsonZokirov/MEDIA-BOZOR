@@ -53,6 +53,9 @@ function Layout() {
           <NavLink to="Blogers">
             <ListItemText primary={t("Блогеры")} />
           </NavLink>
+          <NavLink to="Smm">
+            <ListItemText primary={t("SMM")} />
+          </NavLink>
           <NavLink to="Clients">
             <ListItemText primary={t("Клиенты")} />
           </NavLink>
