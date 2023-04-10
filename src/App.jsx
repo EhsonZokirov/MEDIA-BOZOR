@@ -10,6 +10,7 @@ import NoMatch from "./components/Pages/NoMatch";
 import "./App.css";
 import UserById from "./components/Pages/UserById";
 import Login from "./components/Pages/Login";
+import SMM from "./components/SMM";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="Home" element={<Home />} />
           <Route path="Blogers" element={<Blogers />} />
+          <Route path="Smm" element={<SMM />} />
           <Route path="Clients" element={<Clients />} />
           <Route path="Partners" element={<Partners />} />
           <Route path="Contacts" element={<Contacts />} />

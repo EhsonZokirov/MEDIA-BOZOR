@@ -136,16 +136,22 @@ function Layout() {
             </NavLink>
             <NavLink
               className="hover:text-white cursor-pointer transition text-center m-auto"
+              to="Smm"
+            >
+              {t("SMM")}
+            </NavLink>
+            <NavLink
+              className="hover:text-white cursor-pointer transition text-center m-auto"
               to="Clients"
             >
               {t("Клиенты")}
             </NavLink>
-            <NavLink
+            {/* <NavLink
               className="hover:text-white cursor-pointer transition text-center m-auto"
               to="Partners"
             >
               {t("Партнёры")}
-            </NavLink>
+            </NavLink> */}
             <NavLink
               className="hover:text-white cursor-pointer transition text-center m-auto"
               to="Contacts"
