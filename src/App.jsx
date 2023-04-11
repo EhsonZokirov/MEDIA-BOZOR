@@ -26,7 +26,7 @@ function App() {
           <Route path="Partners" element={<Partners />} />
           <Route path="Contacts" element={<Contacts />} />
           <Route path="Login" element={<Login />} />
-          <Route path="user/:id" element={<UserById />} />
+          <Route path="/:id" element={<UserById />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>

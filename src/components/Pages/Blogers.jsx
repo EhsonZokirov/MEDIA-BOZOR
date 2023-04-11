@@ -327,7 +327,6 @@ function Blogers() {
               return (
                 <Cards
                   onClick={() => statusTodo(e.id)}
-                  key={e.id}
                   name={e.name}
                   img={e.img}
                   inst={e.inst}
