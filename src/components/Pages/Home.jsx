@@ -23,6 +23,70 @@ import alif from "../img/alif_en.png";
 import { Link } from "react-router-dom";
 import Cards from "../Cards";
 import { useTranslation } from "react-i18next";
+let bloggers = [
+  ///////////////////////////////////// FOZILOV
+  {
+    id: 1,
+    name: "Foz1lov",
+    img: fozilov,
+    inst: "216k",
+    youtube: "10k",
+    tiktok: "291k",
+    gender: "male",
+    instanik: "foz1lov",
+  },
+  ///////////////////////////////////// Dilnaze
+  {
+    id: 2,
+    name: "Dilnazei",
+    img: Dilnaze,
+    inst: "11k",
+    youtube: "0k",
+    tiktok: "5k",
+    gender: "female",
+  },
+  ///////////////////////////////////// Zanjabil Bro
+  {
+    id: 3,
+    name: "ZanjabilBro",
+    img: ZANJABIL,
+    inst: "262k",
+    youtube: "160k",
+    tiktok: "95.8k",
+    gender: "male",
+  },
+  ///////////////////////////////////// Джонон
+  {
+    id: 4,
+    name: "Jononisher",
+    img: Jonon,
+    inst: "265k",
+    youtube: "57k",
+    tiktok: "138.4k",
+    gender: "female",
+  },
+  ///////////////////////////////////// Aziz Rahima
+  {
+    id: 5,
+    name: "Aziz.Rahima",
+    img: azizRahima,
+    inst: "730k",
+    youtube: "20k",
+    tiktok: "450k",
+    gender: "family",
+  },
+  ///////////////////////////////////// Aziz Rahima
+
+  {
+    id: 6,
+    name: "_Zarkaa_",
+    img: zarka,
+    inst: "255k",
+    youtube: "0k",
+    tiktok: "53.4k",
+    gender: "female",
+  },
+];
 
 function Home() {
   let sovet = () => {
@@ -45,7 +109,7 @@ function Home() {
               src={logo}
               alt="logo"
             />
-            <div className="font-bold text-[#cc0909e2]  text-5xl ">
+            <div className="font-black text-[#cc0909e2]  text-5xl ">
               <p
                 data-aos="fade-right"
                 data-aos-offset="500"
@@ -172,57 +236,17 @@ function Home() {
             {t("БЛОГЕРЫ")}{" "}
           </h1>
           <div className="grid xs:grid-cols-2 lg:grid-cols-3 m-auto text-center font-medium md:w-[80%] px-5 gap-5">
-            {/* FOZILOV */}
-            <Cards
-              img={fozilov}
-              name="Илхом"
-              inst="216k"
-              youtube="9.58k"
-              tiktok="50k"
-            />
-            {/* Dilnaze */}
-
-            <Cards
-              img={Dilnaze}
-              name="Дилноза"
-              inst="11k"
-              youtube="0"
-              tiktok="5k"
-            />
-
-            {/* ZANJABIL */}
-            <Cards
-              img={ZANJABIL}
-              name="Матеош"
-              inst="262k"
-              youtube="158k"
-              tiktok="150k"
-            />
-
-            {/* JONON */}
-            <Cards
-              img={Jonon}
-              name="Джонон"
-              inst="260k"
-              youtube="57k"
-              tiktok="70k"
-            />
-            {/* AZIZ & RAHIMA */}
-            <Cards
-              img={azizRahima}
-              name="Азиз и Рахима"
-              inst="729k"
-              youtube="17k"
-              tiktok="450k"
-            />
-            {/* ZARKA */}
-            <Cards
-              img={zarka}
-              name="Зарина"
-              inst="255k"
-              youtube="0"
-              tiktok="150k"
-            />
+            {bloggers.map((e) => {
+              return (
+                <Cards
+                  name={e.name}
+                  img={e.img}
+                  inst={e.inst}
+                  youtube={e.youtube}
+                  tiktok={e.tiktok}
+                />
+              );
+            })}
           </div>
           {/* ALL BLOGGERS BUTTON */}
           <div data-aos="zoom-in-up" className="m-auto text-center mt-20">
@@ -243,7 +267,7 @@ function Home() {
           <h1 className="text-center pb-10 font-bold text-3xl">
             {t("НАШИ КЛИЕНТЫ")}:
           </h1>
-          <section className=" grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 w-[50%] lg:w-[75%] m-auto">
+          <section className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 w-[60%] transition-all lg:w-[75%] m-auto">
             <div className="m-auto flex items-center">
               <img
                 className="m-auto hover:scale-110 transition-all"

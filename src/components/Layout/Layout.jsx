@@ -122,7 +122,7 @@ function Layout() {
       </Box>
       {/* LANGUAGE */}
       <header>
-        <nav className="flex justify-between md:justify-center fixed w-[100%] backdrop-blur-[5px] z-10 items-center py-2 px-5 md:px-0 list-none text-slate-300 bg-[#0000004a]">
+        <nav className="fontLayout flex justify-between md:justify-center fixed w-[100%] backdrop-blur-[5px] z-10 items-center py-2 px-5 md:px-0 list-none text-slate-300 bg-[#0000004a]">
           <div className="md:m-auto">
             <NavLink to="Home">
               <img className="w-[50px]  transition-all" src={logo} alt="logo" />

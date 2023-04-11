@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import fozilov from "../img/Fozilov.jpg";
 import Dilnaze from "../img/Dilnaze.jpg";
 import ZANJABIL from "../img/ZANJABIL.JPG";
