@@ -20,6 +20,15 @@ import NazarievaJas from "../img/Nazarieva Jasmina.jpg";
 import Bahora from "../img/Ruzieva Bahora.jpg";
 import Mirvais from "../img/Mirvais.jpg";
 import jseng from "../img/Jseng.jpg";
+import Davood_khan from "../img/Dovood_khan.jpg";
+import ManizhaUmedulla from "../img/ManizhaUmedulla.jpg";
+import Said_Shukurov from "../img/SaidShukurov(SKAP).jpg";
+import Beha_en from "../img/Beha_en.jpg";
+import Umed_taj_one from "../img/UmedTajOne.jpg";
+import shoira_pulatova from "../img/ShoiraPulatova.jpg";
+import cherrryw from "../img/Madina (CHERRYw).jpg";
+import Nasibajon_life from "../img/NasibaJon_life.jpg";
+
 import { useTranslation } from "react-i18next";
 import { InputAdornment, MenuItem, Select, TextField } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
@@ -85,6 +94,7 @@ function Blogers() {
       youtube: "20k",
       tiktok: "450k",
       gender: "family",
+      learning: "true",
     },
     ///////////////////////////////////// Aziz Rahima
     {
@@ -95,6 +105,7 @@ function Blogers() {
       youtube: "0",
       tiktok: "50k",
       gender: "family",
+      learning: "true",
     },
     ///////////////////////////////////// Zarka
     {
@@ -222,6 +233,87 @@ function Blogers() {
       name: "Nazar1eva",
       img: NazarievaJas,
       inst: "5.2k",
+      youtube: "0",
+      tiktok: "5k",
+      gender: "female",
+    },
+    ///////////////////////////////////// Umed taj one
+    {
+      id: 19,
+      name: "Umed_tajone",
+      img: Umed_taj_one,
+      inst: "242k",
+      youtube: "0",
+      tiktok: "0k",
+      gender: "male",
+    },
+    ///////////////////////////////////// Manizha
+    {
+      id: 20,
+      name: "manizhaumedullaa",
+      img: ManizhaUmedulla,
+      inst: "127k",
+      youtube: "0",
+      tiktok: "10k",
+      gender: "female",
+    },
+    ///////////////////////////////////// Said Shukurov (mr. SKAP)
+    {
+      id: 21,
+      name: "_Said_Shukurov_",
+      img: Said_Shukurov,
+      inst: "327k",
+      youtube: "0",
+      tiktok: "0",
+      gender: "male",
+    },
+    ///////////////////////////////////// Shoira Pulatova
+    {
+      id: 22,
+      name: "showshotime",
+      img: shoira_pulatova,
+      inst: "186k",
+      youtube: "0",
+      tiktok: "0",
+      gender: "female",
+    },
+    ///////////////////////////////////// Beha_En
+    {
+      id: 23,
+      name: "Beha_en",
+      img: Beha_en,
+      inst: "107k",
+      youtube: "0",
+      tiktok: "5k",
+      gender: "male",
+      learning: "true",
+    },
+    ///////////////////////////////////// CHerryw Madina
+    {
+      id: 24,
+      name: "cherrryw",
+      img: cherrryw,
+      inst: "169k",
+      youtube: "0",
+      tiktok: "10k",
+      gender: "female",
+    },
+    ///////////////////////////////////// Dowood khan
+    {
+      id: 25,
+      name: "Dovood_khan",
+      img: Davood_khan,
+      inst: "165k",
+      youtube: "0",
+      tiktok: "15k",
+      gender: "male",
+    },
+    ///////////////////////////////////// Nasibajon_life
+    {
+      id: 25,
+      name: "Nasibajon_life",
+      img: Nasibajon_life,
+      inst: "22k",
       youtube: "0",
       tiktok: "5k",
       gender: "female",

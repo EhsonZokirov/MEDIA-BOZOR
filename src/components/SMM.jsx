@@ -7,6 +7,9 @@ import Parvina from "../components/img/Parvina.jpg";
 import Mavzuna from "../components/img/Mavzuna.jpg";
 import Akmal from "../components/img/Akmal.jpg";
 import Sofia from "../components/img/SOFIA.jpg";
+import AminaSMM from "../components/img/AminaSMM.jpg";
+import UmedaSmm from "../components/img/Umeda.jpg";
+
 function SMM() {
   return (
     <div>
@@ -26,7 +29,9 @@ function SMM() {
               <p className="text-[10px]">dar orzui gashnich va ukrob</p>
             </div>
             <div className="">
-              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">ПОДРОБНЕЕ</button>
+              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">
+                ПОДРОБНЕЕ
+              </button>
             </div>
           </div>
           <div className="md:w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto hover:scale-[1.03] transition-all rounded-xl">
@@ -36,7 +41,9 @@ function SMM() {
               <p className="text-[10px]"> ЛИЧНЫЙ БЛОГ </p>
             </div>
             <div className="">
-              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">ПОДРОБНЕЕ</button>
+              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">
+                ПОДРОБНЕЕ
+              </button>
             </div>
           </div>
           <div className="md:w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto hover:scale-[1.03] transition-all rounded-xl">
@@ -46,7 +53,9 @@ function SMM() {
               <p className="text-[10px]">Self development</p>
             </div>
             <div className="">
-              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">ПОДРОБНЕЕ</button>
+              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">
+                ПОДРОБНЕЕ
+              </button>
             </div>
           </div>
           <div className="md:w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto hover:scale-[1.03] transition-all rounded-xl">
@@ -56,7 +65,9 @@ function SMM() {
               <p className="text-[10px]">Блогер / SMM</p>
             </div>
             <div className="">
-              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">ПОДРОБНЕЕ</button>
+              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">
+                ПОДРОБНЕЕ
+              </button>
             </div>
           </div>
           <div className="md:w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto hover:scale-[1.03] transition-all rounded-xl">
@@ -66,7 +77,9 @@ function SMM() {
               <p className="text-[10px]">Совмешаю SMM и Медицину</p>
             </div>
             <div className="">
-              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">ПОДРОБНЕЕ</button>
+              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">
+                ПОДРОБНЕЕ
+              </button>
             </div>
           </div>
           <div className="md:w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto hover:scale-[1.03] transition-all rounded-xl">
@@ -76,7 +89,9 @@ function SMM() {
               <p className="text-[10px]">Делаю ВАУ-ПАУ контент</p>
             </div>
             <div className="">
-              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">ПОДРОБНЕЕ</button>
+              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">
+                ПОДРОБНЕЕ
+              </button>
             </div>
           </div>
           <div className="md:w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto hover:scale-[1.03] transition-all rounded-xl">
@@ -86,7 +101,9 @@ function SMM() {
               <p className="text-[10px]">от эстетики до продаж</p>
             </div>
             <div className="">
-              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">ПОДРОБНЕЕ</button>
+              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">
+                ПОДРОБНЕЕ
+              </button>
             </div>
           </div>
           <div className="md:w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto hover:scale-[1.03] transition-all rounded-xl">
@@ -96,7 +113,33 @@ function SMM() {
               <p className="text-[10px]">искусство продажи</p>
             </div>
             <div className="">
-              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">ПОДРОБНЕЕ</button>
+              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">
+                ПОДРОБНЕЕ
+              </button>
+            </div>
+          </div>
+          <div className="md:w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto hover:scale-[1.03] transition-all rounded-xl">
+            <img className="rounded-t-xl" src={UmedaSmm} alt="Adbullo" />
+            <div className="text-center p-3">
+              <h1 className=" font-semibold text-lg">Umeda</h1>
+              <p className="text-[10px]">SMM | Reels</p>
+            </div>
+            <div className="">
+              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">
+                ПОДРОБНЕЕ
+              </button>
+            </div>
+          </div>
+          <div className="md:w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto hover:scale-[1.03] transition-all rounded-xl">
+            <img className="rounded-t-xl" src={AminaSMM} alt="Adbullo" />
+            <div className="text-center p-3">
+              <h1 className=" font-semibold text-lg">Amina</h1>
+              <p className="text-[10px]">Жизнь студентки с любоввью к себе</p>
+            </div>
+            <div className="">
+              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">
+                ПОДРОБНЕЕ
+              </button>
             </div>
           </div>
         </div>
