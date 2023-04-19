@@ -9,139 +9,34 @@ import Akmal from "../components/img/Akmal.jpg";
 import Sofia from "../components/img/SOFIA.jpg";
 import AminaSMM from "../components/img/AminaSMM.jpg";
 import UmedaSmm from "../components/img/Umeda.jpg";
+import CardsSMM from "./CardsSMM";
+import { useTranslation } from "react-i18next";
 
 function SMM() {
+  const { t } = useTranslation();
   return (
     <div>
       <section className="pt-32 m-auto">
         <div className="text-center pb-10 ">
           <h1 className=" md:text-2xl">
             <span className="font-semibold md:text-4xl"> SMM </span> —
-            сокращение от social media marketing, <br /> что в свою очередь
-            переводится как маркетинг в социальных сетях.
+            {t("сокращение от social media marketing,")} <br />{" "}
+            {t(
+              "что в свою очередь переводится как маркетинг в социальных сетях."
+            )}
           </h1>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-5 w-[80%] m-auto py-10">
-          <div className="md:w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto hover:scale-[1.03] transition-all rounded-xl">
-            <img className="rounded-t-xl" src={Abdullo} alt="Adbullo" />
-            <div className="text-center p-3">
-              <h1 className=" font-semibold text-lg">Adbullo</h1>
-              <p className="text-[10px]">dar orzui gashnich va ukrob</p>
-            </div>
-            <div className="">
-              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">
-                ПОДРОБНЕЕ
-              </button>
-            </div>
-          </div>
-          <div className="md:w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto hover:scale-[1.03] transition-all rounded-xl">
-            <img className="rounded-t-xl" src={Marsu} alt="Adbullo" />
-            <div className="text-center p-3">
-              <h1 className=" font-semibold text-lg">Marsu</h1>
-              <p className="text-[10px]"> ЛИЧНЫЙ БЛОГ </p>
-            </div>
-            <div className="">
-              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">
-                ПОДРОБНЕЕ
-              </button>
-            </div>
-          </div>
-          <div className="md:w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto hover:scale-[1.03] transition-all rounded-xl">
-            <img className="rounded-t-xl" src={Abunasr} alt="Adbullo" />
-            <div className="text-center p-3">
-              <h1 className=" font-semibold text-lg">Abunasr</h1>
-              <p className="text-[10px]">Self development</p>
-            </div>
-            <div className="">
-              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">
-                ПОДРОБНЕЕ
-              </button>
-            </div>
-          </div>
-          <div className="md:w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto hover:scale-[1.03] transition-all rounded-xl">
-            <img className="rounded-t-xl" src={Nasiba} alt="Adbullo" />
-            <div className="text-center p-3">
-              <h1 className=" font-semibold text-lg">Nasiba</h1>
-              <p className="text-[10px]">Блогер / SMM</p>
-            </div>
-            <div className="">
-              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">
-                ПОДРОБНЕЕ
-              </button>
-            </div>
-          </div>
-          <div className="md:w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto hover:scale-[1.03] transition-all rounded-xl">
-            <img className="rounded-t-xl" src={Parvina} alt="Adbullo" />
-            <div className="text-center p-3">
-              <h1 className=" font-semibold text-lg">Parvina</h1>
-              <p className="text-[10px]">Совмешаю SMM и Медицину</p>
-            </div>
-            <div className="">
-              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">
-                ПОДРОБНЕЕ
-              </button>
-            </div>
-          </div>
-          <div className="md:w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto hover:scale-[1.03] transition-all rounded-xl">
-            <img className="rounded-t-xl" src={Mavzuna} alt="Adbullo" />
-            <div className="text-center p-3">
-              <h1 className=" font-semibold text-lg">Mavzuna</h1>
-              <p className="text-[10px]">Делаю ВАУ-ПАУ контент</p>
-            </div>
-            <div className="">
-              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">
-                ПОДРОБНЕЕ
-              </button>
-            </div>
-          </div>
-          <div className="md:w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto hover:scale-[1.03] transition-all rounded-xl">
-            <img className="rounded-t-xl" src={Sofia} alt="Adbullo" />
-            <div className="text-center p-3">
-              <h1 className=" font-semibold text-lg">SOFIYA</h1>
-              <p className="text-[10px]">от эстетики до продаж</p>
-            </div>
-            <div className="">
-              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">
-                ПОДРОБНЕЕ
-              </button>
-            </div>
-          </div>
-          <div className="md:w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto hover:scale-[1.03] transition-all rounded-xl">
-            <img className="rounded-t-xl" src={Akmal} alt="Adbullo" />
-            <div className="text-center p-3">
-              <h1 className=" font-semibold text-lg">Akmal</h1>
-              <p className="text-[10px]">искусство продажи</p>
-            </div>
-            <div className="">
-              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">
-                ПОДРОБНЕЕ
-              </button>
-            </div>
-          </div>
-          <div className="md:w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto hover:scale-[1.03] transition-all rounded-xl">
-            <img className="rounded-t-xl" src={UmedaSmm} alt="Adbullo" />
-            <div className="text-center p-3">
-              <h1 className=" font-semibold text-lg">Umeda</h1>
-              <p className="text-[10px]">SMM | Reels</p>
-            </div>
-            <div className="">
-              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">
-                ПОДРОБНЕЕ
-              </button>
-            </div>
-          </div>
-          <div className="md:w-[65%] shadow-lg hover:shadow-xl bg-[#ffffff2f] m-auto hover:scale-[1.03] transition-all rounded-xl">
-            <img className="rounded-t-xl" src={AminaSMM} alt="Adbullo" />
-            <div className="text-center p-3">
-              <h1 className=" font-semibold text-lg">Amina</h1>
-              <p className="text-[10px]">Жизнь студентки с любоввью к себе</p>
-            </div>
-            <div className="">
-              <button className=" hover:bg-pink-500 border-t border-slate-900 transition-all hover:text-white w-[100%] rounded-b-xl ">
-                ПОДРОБНЕЕ
-              </button>
-            </div>
-          </div>
+          <CardsSMM name="Abdullo" IMG={Abdullo} about="Gashni4 Ukrob" />
+          <CardsSMM name="Marsu" IMG={Marsu} about="Личный блог" />
+          <CardsSMM name="Abunasr" IMG={Abunasr} about="Self Development" />
+          <CardsSMM name="Nasiba" IMG={Nasiba} about="Блогер | SMM" />
+          <CardsSMM name="Parvina" IMG={Parvina} about=" SMM и Медицину" />
+          <CardsSMM name="Mavzuna" IMG={Mavzuna} about=" ВАУ-ПАУ контент" />
+          <CardsSMM name="Sofia" IMG={Sofia} about="от эстетики до продаж" />
+          <CardsSMM name="Akmal" IMG={Akmal} about="ВИДЕМЕЙКЕР" />
+          <CardsSMM name="Umeda" IMG={UmedaSmm} about="SMM | REELS" />
+          <CardsSMM name="Amina" IMG={AminaSMM} about="Жизнь студентки" />
         </div>
       </section>
     </div>

@@ -28,7 +28,6 @@ import Umed_taj_one from "../img/UmedTajOne.jpg";
 import shoira_pulatova from "../img/ShoiraPulatova.jpg";
 import cherrryw from "../img/Madina (CHERRYw).jpg";
 import Nasibajon_life from "../img/NasibaJon_life.jpg";
-
 import { useTranslation } from "react-i18next";
 import { InputAdornment, MenuItem, Select, TextField } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
