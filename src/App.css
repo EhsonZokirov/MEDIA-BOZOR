@@ -6,12 +6,10 @@
 }
 
 body {
-    background: linear-gradient(rgba(111, 0, 255, 0.955), rgb(153, 0, 255));
+    background: linear-gradient(rgba(111, 0, 255, 0.955), rgba(153, 0, 255, 0.855));
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
 }
-
-/* bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 */
